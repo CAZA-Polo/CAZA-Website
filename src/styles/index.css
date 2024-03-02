@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+
+/* Poppins Font */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* Poppins Font */
+
+.what-we-do-bg {
+  background: rgb(2,0,36);
+  background: linear-gradient(267deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.thought-bg {
+  background:linear-gradient(0deg, rgba(33, 150, 243, 0.53), rgba(33, 150, 243, 0.53)), url('../../images/thought-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.message__bg {
+  background-color: rgba(33, 150, 243, 0.65);
+}
+
+.contact__bg {
+  background:linear-gradient(0deg, rgba(33, 150, 243, 0.53), rgba(33, 150, 243, 0.53)), url('../../images/contact-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.leaders__bg {
+  background: -webkit-linear-gradient(45deg, rgba(34, 155, 242, 1) 0%, rgba(0, 128, 129, 1) 99%, rgba(0, 128, 128, 1) 100%);
+}
+
+.services__bg {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/services/services-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.global__bg { 
+  background: -webkit-linear-gradient(45deg, rgba(34, 155, 242, 1) 0%, rgba(0, 128, 129, 1) 99%, rgba(0, 128, 128, 1) 100%);
+}
+
+.contact__banner__bg {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/contact/Language-Services-banner-2500x500-01.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
