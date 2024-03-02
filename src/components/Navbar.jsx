@@ -103,14 +103,13 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div
-                className={`flex items-center justify-around w-full ${!isVisible ? 'mt-0' : 'mt-8'}`}>
-                    <img className="w-[128px] h-[68px] object-fit" src="./images/CAZA_Transparent.png" alt="CAZA Logo" />
-                    <ul className="flex items-center gap-5 font-semibold text-gray-700">
+                <div className={`flex items-center justify-start w-full relative ${!isVisible ? 'mt-0' : 'mt-8'}`}>
+                    <img className="w-[128px] h-[65px] mx-5 object-fit" src="./images/CAZA_Transparent.png" alt="CAZA Logo" />
+                    <ul className="flex justify-center items-center gap-5 font-normal text-gray-700 absolute mx-auto w-full">
                         { paths?.map((path,id) => (
-                            <li onClick={ (path.link === '/' && pathName === '/') && scrollToTop  } key={id}>
+                            <li onClick={ (path.link === '/' && pathName === '/') && scrollToTop } key={id}>
                                 { path.name !== 'About' ? 
-                                    <Link className="hover:border-b-2 hover:border-gray-700 hover:transition flex items-center gap-1" to={path.link}>{path.name}</Link> 
+                                    <Link className={`${path.name === 'Contact Us' && 'bg-blue-500 p-2 rounded-full text-gray-100' } hover:border-b-2 hover:border-gray-700 hover:transition flex items-center gap-1`} to={path.link}>{path.name}</Link> 
                                         :
                                     <button className="hover:border-b-2 hover:border-gray-700 hover:transition flex items-center gap-1 group relative">{path.name} {path.icon}
                                         <div className="group-hover:flex hidden absolute w-[200px] bg-gray-100 top-6 p-2 rounded-md flex-col items-start">
