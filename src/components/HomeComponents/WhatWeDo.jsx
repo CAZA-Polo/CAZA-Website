@@ -29,9 +29,8 @@ const WhatWeDo = () => {
     return (
         <section className="items-center justify-center gap-4 flex flex-col w-full p-16 what-we-do-bg">
             <div className="flex flex-col items-center gap-3 text-white">
-                <h1 className="text-4xl font-bold">What We Do</h1>
+                <h1 className="text-4xl font-semibold">What We Do</h1>
                 <p className="text-sm">We help the banks to customize their products and upgrade their systems.</p>
-
 
                 <div className="flex items-stretch justify-around gap-10 mt-10">
                     { events?.map(event => (

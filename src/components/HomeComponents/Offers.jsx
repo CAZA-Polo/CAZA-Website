@@ -41,10 +41,10 @@ const Offers = () => {
     ])
 
     return (
-        <section className="p-24 py-10">
+        <section className="p-32 container mx-auto">
             <div className="mt-5 text-center flex justify-center">
                 <div className="w-1/2">
-                    <h1 className="text-5xl font-bold text-gray-700">What we offer</h1>
+                    <h1 className="text-5xl font-semibold text-gray-700">What we offer</h1>
                     <p className="text-sm">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
                     We also offer staff augmentation.
                     </p>

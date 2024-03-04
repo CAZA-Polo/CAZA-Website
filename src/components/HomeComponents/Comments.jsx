@@ -18,15 +18,17 @@ const Comments = () => {
     ])
 
     return (
-        <section className="p-32 flex items-center justify-center thought-bg relative">
-            <Carousel className="w-1/2" showThumbs={false} autoPlay={true} interval={3000} showArrows={true} swipeable={true} showIndicators={false} infiniteLoop showStatus={false}>
-                { comments?.map(comment => (
-                    <div className="flex flex-col gap-5 items-center text-gray-100" key={comment.id}>
-                        <p>{comment.description}</p>
-                        <p className="italic">{comment.commentBy}</p>
-                    </div>
-                )) }    
-            </Carousel>
+        <section className="p-32 thought-bg">
+            <div className="container mx-auto flex items-center justify-center relative">
+                <Carousel className="w-1/2" showThumbs={false} autoPlay={true} interval={3000} showArrows={true} swipeable={true} showIndicators={false} infiniteLoop showStatus={false}>
+                    { comments?.map(comment => (
+                        <div className="flex flex-col gap-5 items-center text-gray-100" key={comment.id}>
+                            <p>{comment.description}</p>
+                            <p className="italic">{comment.commentBy}</p>
+                        </div>
+                    )) }    
+                </Carousel>
+            </div>
         </section>
     )
 }

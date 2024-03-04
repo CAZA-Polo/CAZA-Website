@@ -3,7 +3,7 @@ import { FaSquareFacebook,FaSquareTwitter,FaSquareGooglePlus } from "react-icons
 const Footer = () => {
     return (
         <footer className="bg-gray-900">
-            <div className="flex gap-10 p-16 items-stretch justify-around text-gray-300">
+            <div className="flex gap-10 p-16 items-stretch justify-around text-gray-300 container mx-auto">
                 <div>
                     <img className="object-fit w-64" src="/images/CAZA_Transparent.png" alt="CAZA Logo" />
                 </div>

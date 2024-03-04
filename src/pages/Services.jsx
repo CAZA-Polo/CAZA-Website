@@ -5,10 +5,14 @@ import Creative from "../components/ServicesComponents/Creative";
 import Customize from "../components/ServicesComponents/Customize";
 import GlobalBusiness from "../components/ServicesComponents/GlobalBusiness";
 import Solutions from "../components/ServicesComponents/Solutions";
-
+import { Helmet } from "react-helmet";
 const Services = () => {
     return (
-        <main className="container mx-auto">
+        <>
+        <Helmet>
+            <title>CAZA | Services</title>
+        </Helmet>
+        <main>
             <Banner />
             <Customize />
             <Solutions />
@@ -17,6 +21,7 @@ const Services = () => {
             <Message />
             <Footer />
         </main>
+        </>
     )
 }
 

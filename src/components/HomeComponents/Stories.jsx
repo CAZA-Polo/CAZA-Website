@@ -39,9 +39,9 @@ const Stories = () => {
     ]);
 
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full p-24">
+        <section className="items-center justify-center gap-4 flex flex-col w-full p-24 container mx-auto">
             <div className="flex flex-col gap-3 text-gray-700">
-                <h1 className="font-bold text-center text-5xl mt-10">Our Success Story</h1>
+                <h1 className="font-semibold text-center text-5xl mt-10">Our Success Story</h1>
                 
                 <div className="grid grid-cols-2 gap-10 mt-10">
                     { stories?.map(story => (
@@ -63,7 +63,7 @@ const Stories = () => {
 
                 <div className="flex gap-10 justify-around mt-24 items-stretch">
                     { offers?.map(offer => (
-                        <div className="bg-gray-100 rounded-md w-1/2 p-3" key={offer.id}>
+                        <div className="bg-gray-50 shadow-lg rounded-md w-1/2 p-3" key={offer.id}>
                             <h3 className="font-semibold text-lg">{offer.title}</h3>
                             <p className="text-sm text-justify mt-1">{offer.description}</p>
                         </div>

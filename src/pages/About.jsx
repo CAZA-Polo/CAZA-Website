@@ -4,10 +4,15 @@ import Leaders from "../components/AboutComponents/Leaders";
 import Vision from "../components/AboutComponents/Vision";
 import Footer from "../components/Footer";
 import Message from "../components/Message";
+import { Helmet } from "react-helmet";
 
 const About = () => {
     return (
-        <main className="container mx-auto">
+        <>
+        <Helmet>
+            <title>CAZA | About</title>
+        </Helmet>
+        <main>
             <Banner />
             <History />
             <Leaders />
@@ -15,6 +20,7 @@ const About = () => {
             <Message />
             <Footer />
         </main>
+        </>
     )
 }
 

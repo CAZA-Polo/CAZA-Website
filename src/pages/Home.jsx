@@ -8,10 +8,14 @@ import Stories from '../components/HomeComponents/Stories';
 import TopBanner from '../components/HomeComponents/TopBanner';
 import WhatWeDo from '../components/HomeComponents/WhatWeDo';
 import Message from '../components/Message';
-
+import { Helmet } from "react-helmet";
 const Home = () => {
     return (
-        <main className="container mx-auto">
+        <>
+        <Helmet>
+            <title>CAZA | Home</title>
+        </Helmet>
+        <main>
             <Banner />
             <TopBanner />
             <Services />
@@ -23,6 +27,7 @@ const Home = () => {
             <Message />
             <Footer />
         </main>
+        </>
     )
 }
 

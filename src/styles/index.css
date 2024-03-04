@@ -12,6 +12,11 @@
 
 :root {
   --font-family: "Poppins", sans-serif;
+  --caza-blue: rgb(0,54,100);
+}
+
+.caza__blue {
+  background-color: var(--caza-blue);
 }
 
 /* Poppins Font */

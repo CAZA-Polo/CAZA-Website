@@ -33,11 +33,11 @@ const Customize = () => {
 
     return (
         <section className="p-32 bg-gray-100">
-            <div className="w-full">
+            <div className="w-full container mx-auto">
                 <div className="flex justify-center">
                     <div className="w-1/2 self-center">
                         <h1 className="text-4xl text-gray-700 text-center font-semibold">We customize our services to meet your requirements</h1>
-                        <p className="text-justify text-gray-700 mt-4">Onsite and offsite implementation, development, and support services ensuring HIGH quality and cost-effective solutions. We also offer staff augmentation.</p>
+                        <p className="text-center text-gray-700 mt-4">Onsite and offsite implementation, development, and support services ensuring HIGH quality and cost-effective solutions. We also offer staff augmentation.</p>
                     </div>
                 </div>
 

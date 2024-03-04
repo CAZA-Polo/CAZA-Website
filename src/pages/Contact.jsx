@@ -3,16 +3,21 @@ import CAZALocation from "../components/ContactComponents/CAZALocation";
 import ExperiencedTeam from "../components/ContactComponents/ExperiencedTeam";
 import Footer from "../components/Footer";
 import Message from "../components/Message";
-
+import { Helmet } from "react-helmet";
 const Contact = () => {
     return (
-        <main className="container mx-auto">
+        <>
+        <Helmet>
+            <title>CAZA | Contact Us</title>
+        </Helmet>
+        <main>
             <Banner />
             <ExperiencedTeam />
             <CAZALocation />
             <Message />
             <Footer />
         </main>
+        </>
     )
 }
 
