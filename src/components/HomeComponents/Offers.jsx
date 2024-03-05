@@ -44,7 +44,7 @@ const Offers = () => {
 
     return (
         <section className="md:p-32 p-10 container mx-auto">
-            <div className="mt-5 text-center flex justify-center">
+            <div className="text-center flex justify-center">
                 <div className="md:w-1/2">
                     <h1 className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</h1>
                     <p className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
@@ -53,22 +53,41 @@ const Offers = () => {
                 </div>
             </div>
 
-            <div className="grid md:grid-cols-3 justify-items-center gap-5 mt-10">
-                <AnimatePresence>
-                    { offers?.map(offer => (
-                        <motion.div key={offer.id} className="flex flex-col hover:scale-105 transition w-full border border-gray-100 rounded-md shadow-lg overflow-hidden">
-                            <img className="w-full h-[191.29px] object-cover" src={offer.bgImage} alt={offer.title} />
+            {/* For Desktop */}
+            <div className="md:grid md:grid-cols-3 justify-items-center gap-5 mt-10 hidden">
+                { offers?.map(offer => (
+                    <div key={offer.id} className="flex flex-col transition w-full border border-gray-100 rounded-md shadow-lg overflow-hidden">
+                        <img className="w-full h-[191.29px] object-cover" src={offer.bgImage} alt={offer.title} />
 
-                            <div className="p-3">
-                                <h2 className="font-semibold md:text-xl text-sm">{offer.title}</h2>
+                        <div className="p-3 flex flex-col justify-between h-full">
+                            <div>
+                                <h2 className="font-semibold md:text-lg text-sm">{offer.title}</h2>
                                 <p className="md:text-sm text-xs text-justify">{offer.description}</p>
-
-                                <Link className="mt-3 md:text-sm text-xs text-blue-500 flex items-center gap-1 hover:underline transition font-semibold" to="/services"><IoIosArrowDropright />Learn more</Link>
                             </div>
-                        </motion.div>
-                    )) }
-                </AnimatePresence>
+
+                            <Link className="mt-3 md:text-sm text-xs text-blue-500 flex items-center gap-1 hover:underline transition font-semibold" to="/services"><IoIosArrowDropright />Learn more</Link>
+                        </div>
+                    </div>
+                )) }
             </div>
+
+            {/* For Mobile */}
+            <Carousel className="mt-12 md:hidden block rounded-md overflow-hidden" autoPlay={true} infiniteLoop={true} showThumbs={false} swipeable={true} showIndicators={false}>
+                { offers?.map(offer => (
+                    <div key={offer.id} className="flex flex-col transition h-full w-full border border-gray-200 rounded-md overflow-hidden">
+                        <img className="w-full h-[191.29px] object-cover" src={offer.bgImage} alt={offer.title} />
+
+                        <div className="p-3 flex flex-col justify-between h-full">
+                            <div>
+                                <h2 className="font-semibold md:text-lg text-sm text-start">{offer.title}</h2>
+                                <p className="md:text-sm text-xs text-justify">{offer.description}</p>
+                            </div>
+
+                            <Link className="mt-3 md:text-sm text-xs text-blue-500 flex items-center gap-1 hover:underline transition font-semibold" to="/services"><IoIosArrowDropright />Learn more</Link>
+                        </div>
+                    </div>
+                )) }
+            </Carousel>
         </section>
     )
 }

@@ -1,10 +1,20 @@
+import { motion } from 'framer-motion';
+
 const Banner = () => {
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full p-24 career__bg">
+        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-16 career__bg">
             <div className="container mx-auto">
-                <div className="flex flex-col items-center gap-3 text-gray-100">
-                    <h1 className="font-semibold text-center text-4xl mt-10">We Offer Huge Opportunity For Growth</h1>
-                    <p className="text-xl">Careers</p>                        
+                <div className="flex flex-col items-center md:gap-3 text-gray-100">
+                    <motion.h1 
+                    initial={{opacity:0, y:-50}}
+                    animate={{opacity:1,y:0}} 
+                    transition={{duration:0.5}}
+                    className="font-semibold text-center md:text-4xl text-xl md:mt-10">We Offer Huge Opportunity For Growth</motion.h1>
+                    <motion.p 
+                    initial={{opacity:0, y:20}}
+                    animate={{opacity:1,y:0}} 
+                    transition={{duration:0.5}}
+                    className="md:text-xl text-sm">Careers</motion.p>                        
                 </div>
             </div>
         </section>

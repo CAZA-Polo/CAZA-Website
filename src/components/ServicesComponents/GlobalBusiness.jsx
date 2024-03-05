@@ -27,16 +27,16 @@ const GlobalBusiness = () => {
     ])
 
     return (
-        <section className="p-32 global__bg">    
+        <section className="md:p-32 p-16 global__bg">    
             <div className="container mx-auto">
-                <h1 className="text-gray-100 text-4xl text-center font-semibold">Global Business Services</h1>
+                <h1 className="text-gray-100 md:text-4xl text-xl text-center font-semibold">Global Business Services</h1>
                 
-                <div className="flex justify-around items-stretch mt-10">
+                <div className="flex md:flex-row flex-col justify-around items-stretch md:mt-10">
                     { businessServices?.map(businessService => (
                         <div className="p-5 text-center w-full text-gray-100" key={businessService.id}>
-                            <button className="text-8xl p-5">{businessService.icon}</button>
-                            <h2 className="mt-2 text-xl font-semibold">{businessService.title}</h2>
-                            <p className="mt-1 text-sm">{businessService.description}</p>
+                            <button className="md:text-8xl text-6xl p-5">{businessService.icon}</button>
+                            <h2 className="md:mt-2 md:text-xl text-sm font-semibold">{businessService.title}</h2>
+                            <p className="mt-1 md:text-sm text-xs">{businessService.description}</p>
                         </div>
                     )) }
                 </div>

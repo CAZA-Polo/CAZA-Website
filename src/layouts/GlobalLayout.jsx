@@ -33,7 +33,7 @@ const GlobalLayout = () => {
             <main className="bg-gray-100 h-full">
                 <Navbar />
                 <Outlet />
-                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce bg-blue-500"><MdArrowDropUp /></button> }
+                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce caza__blue"><MdArrowDropUp /></button> }
             </main>
         </ScrollToTop>
     )

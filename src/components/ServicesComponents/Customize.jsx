@@ -32,21 +32,21 @@ const Customize = () => {
     ])
 
     return (
-        <section className="p-32 bg-gray-100">
+        <section className="md:p-32 p-16 bg-gray-100">
             <div className="w-full container mx-auto">
                 <div className="flex justify-center">
-                    <div className="w-1/2 self-center">
-                        <h1 className="text-4xl text-gray-700 text-center font-semibold">We customize our services to meet your requirements</h1>
-                        <p className="text-center text-gray-700 mt-4">Onsite and offsite implementation, development, and support services ensuring HIGH quality and cost-effective solutions. We also offer staff augmentation.</p>
+                    <div className="md:w-1/2 self-center">
+                        <h1 className="md:text-4xl text-xl text-gray-700 text-center font-semibold">We customize our services to meet your requirements</h1>
+                        <p className="text-center text-gray-700 md:mt-4 mt-2 md:text-base text-xs">Onsite and offsite implementation, development, and support services ensuring HIGH quality and cost-effective solutions. We also offer staff augmentation.</p>
                     </div>
                 </div>
 
-                <div className="flex justify-center items-stretch mt-20">
+                <div className="flex md:flex-row flex-col justify-center items-stretch md:mt-20 mt-10">
                     { services?.map(service => (
                         <div className="border border-gray-300 p-5 text-center w-full" key={service.id}>
-                            <button className="text-5xl text-blue-500 border border-gray-200 bg-gray-100 p-5 rounded-full">{service.icon}</button>
-                            <h2 className="mt-2 text-gray-700 font-semibold">{service.title}</h2>
-                            <p className="mt-3 text-gray-700 text-sm">{service.description}</p>
+                            <button className="md:text-5xl text-4xl text-blue-500 border border-gray-200 bg-gray-100 p-5 rounded-full">{service.icon}</button>
+                            <h2 className="mt-2 text-gray-700 font-semibold md:text-base text-sm">{service.title}</h2>
+                            <p className="md:mt-3 mt-1 text-gray-700 md:text-sm text-xs">{service.description}</p>
                         </div>
                     )) }
                 </div>

@@ -39,20 +39,20 @@ const Stories = () => {
     ]);
 
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full p-24 container mx-auto">
+        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-16 container mx-auto">
             <div className="flex flex-col gap-3 text-gray-700">
-                <h1 className="font-semibold text-center text-5xl mt-10">Our Success Story</h1>
+                <h1 className="font-semibold text-center md:text-5xl text-xl md:mt-10">Our Success Story</h1>
                 
-                <div className="grid grid-cols-2 gap-10 mt-10">
+                <div className="grid md:grid-cols-2 gap-10 mt-10">
                     { stories?.map(story => (
                         <div key={story.id}>
-                            <h2 className="font-semibold text-2xl">{story.title}</h2>
-                            <p className="text-justify text-sm">{story.description}</p>
+                            <h2 className="font-semibold md:text-2xl text-lg">{story.title}</h2>
+                            <p className="text-justify md:text-sm text-xs">{story.description}</p>
                         </div>
                     )) }
                     <div>
-                        <h2 className="font-semibold text-2xl">Offerings</h2>
-                        <ul className="list-disc text-justify text-sm">
+                        <h2 className="font-semibold md:text-2xl text-lg">Offerings</h2>
+                        <ul className="list-disc text-justify md:text-sm text-xs">
                             <li>T24 implementation, development and support - both Onsite and Offsite</li>
                             <li>Staff Augmentation</li>
                             <li>Development of 3rd party solutions and interfaces with T24</li>
@@ -61,11 +61,11 @@ const Stories = () => {
                     </div>
                 </div>
 
-                <div className="flex gap-10 justify-around mt-24 items-stretch">
+                <div className="flex md:flex-row flex-col md:gap-10 gap-5 justify-around md:mt-24 mt-5 items-stretch">
                     { offers?.map(offer => (
-                        <div className="bg-gray-50 shadow-lg rounded-md w-1/2 p-3" key={offer.id}>
-                            <h3 className="font-semibold text-lg">{offer.title}</h3>
-                            <p className="text-sm text-justify mt-1">{offer.description}</p>
+                        <div className="bg-gray-50 shadow-lg rounded-md md:w-1/2 w-full p-3" key={offer.id}>
+                            <h3 className="font-semibold md:text-lg text-sm">{offer.title}</h3>
+                            <p className="md:text-sm text-xs text-justify mt-1">{offer.description}</p>
                         </div>
                     )) }
                 </div>

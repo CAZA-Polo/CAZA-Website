@@ -40,12 +40,12 @@ const Solutions = () => {
         <section className="container mx-auto">
             { services?.map(service => (
                 <div key={service.id} className={`flex ${ service.id % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } ${service.bgColor}`}>
-                    <div className="p-32 w-1/2 bg-gray-100">
-                        <h1 className="font-semibold text-3xl text-gray-700">{service.title}</h1>
-                        <p className="text-sm text-gray-700 text-justify mt-3">{service.description}</p>
-                        <button className="p-2 text-sm bg-blue-500 rounded-sm text-gray-100 mt-2 hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500 transition">
+                    <div className={`md:p-32 p-16 md:w-1/2 w-full ${service.id % 2 !== 0 ? 'bg-sky-500 md:bg-gray-100' : 'bg-gray-100 md:bg-none'}`}>
+                        <h1 className={`font-semibold md:text-3xl text-xl md:text-gray-700 ${service.id % 2 !== 0 ? 'text-white' : ''}`}>{service.title}</h1>
+                        <p className={`md:text-sm text-xs md:text-gray-700 text-justify mt-3 ${service.id % 2 !== 0 ? 'text-white' : ''}`}>{service.description}</p>
+                        {/* <button className="p-2 text-sm bg-blue-500 rounded-sm text-gray-100 mt-2 hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500 transition">
                             <Link to='/contact'>Contact Us</Link>
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             )) }

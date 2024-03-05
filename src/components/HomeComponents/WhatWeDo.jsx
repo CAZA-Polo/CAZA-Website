@@ -27,16 +27,16 @@ const WhatWeDo = () => {
     ])
 
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full p-16 what-we-do-bg">
+        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-16 p-10 what-we-do-bg">
             <div className="flex flex-col items-center gap-3 text-white">
-                <h1 className="text-4xl font-semibold">What We Do</h1>
-                <p className="text-sm">We help the banks to customize their products and upgrade their systems.</p>
+                <h1 className="md:text-4xl text-xl font-semibold">What We Do</h1>
+                <p className="md:text-sm text-xs">We help the banks to customize their products and upgrade their systems.</p>
 
-                <div className="flex items-stretch justify-around gap-10 mt-10">
+                <div className="flex md:flex-row flex-col md:items-stretch items-start justify-around gap-10 mt-10">
                     { events?.map(event => (
-                        <div key={event.id} className="w-1/2">
-                            <h2 className="flex items-center gap-2 text-xl font-semibold">{event.icon} {event.title}</h2>
-                            <p className="text-sm">{event.description}</p>
+                        <div key={event.id} className="md:w-1/2">
+                            <h2 className="flex items-center gap-2 md:text-xl text-lg font-semibold">{event.icon} {event.title}</h2>
+                            <p className="md:text-sm text-xs">{event.description}</p>
                         </div>
                     )) }
                 </div>

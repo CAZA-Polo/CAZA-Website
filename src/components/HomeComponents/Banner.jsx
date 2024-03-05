@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 const Banner = () => {
 
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-10 md:container md:mx-auto">
+        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-12 md:container md:mx-auto">
             <div className="flex flex-col gap-4 text-gray-700 md:w-1/2">
                 <motion.h1
                 initial={{opacity:0, y:-50}}
                 animate={{opacity:1,y:0}} 
                 transition={{duration:0.5}}
-                className="font-semibold text-center md:text-5xl text-2xl mt-10">Welcome to CAZA Technology Solutions Inc.</motion.h1>
+                className="font-semibold text-center md:text-5xl text-2xl">Welcome to CAZA Technology Solutions Inc.</motion.h1>
                 <motion.p 
                 initial={{opacity:0, y:20}}
                 animate={{opacity:1,y:0}} 
