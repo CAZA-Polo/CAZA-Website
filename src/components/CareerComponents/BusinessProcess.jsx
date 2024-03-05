@@ -58,7 +58,7 @@ const BusinessProcess = () => {
             <h1 className="text-4xl font-semibold text-gray-700 text-center">Our Business Process</h1>
             <div className="grid grid-cols-4 justify-items-stretch gap-5 mt-10">
                 { processes?.map(process => (
-                    <div className="flex items-center justify-center flex-col shadow-lg border bg-white border-gray-300 rounded-md px-3 py-10">
+                    <div className="flex items-center gap-2 justify-center flex-col shadow-lg border bg-white border-gray-300 rounded-md px-3 py-10">
                         <span className="text-5xl text-blue-500">{process.icon}</span>
                         <p className="text-sm">{process.title}</p>
                     </div>

@@ -1,6 +1,37 @@
 import { FaSquareFacebook,FaSquareTwitter,FaSquareGooglePlus } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Footer = () => {
+
+    const [paths,setPaths] = useState([
+        {
+            id: 1,
+            pathName: 'About Us',
+            link: '/about'
+        },
+        {
+            id: 1,
+            pathName: 'Products',
+            link: '/products'
+        },
+        {
+            id: 1,
+            pathName: 'Career',
+            link: '/career'
+        },
+        {
+            id: 1,
+            pathName: 'FAQ',
+            link: '/faq'
+        },
+        {
+            id: 1,
+            pathName: 'Contact Us',
+            link: '/contact'
+        }
+    ])
+
     return (
         <footer className="bg-gray-900">
             <div className="flex gap-10 p-16 items-stretch justify-around text-gray-300 container mx-auto">
@@ -11,11 +42,11 @@ const Footer = () => {
                 <div>
                     <h1 className="font-semibold text-lg">Useful Links</h1>
                     <ul className="text-sm">
-                        <li className="hover:underline transition cursor-pointer">About Us</li>
-                        <li className="hover:underline transition cursor-pointer">Project</li>
-                        <li className="hover:underline transition cursor-pointer">Career</li>
-                        <li className="hover:underline transition cursor-pointer">FAQ</li>
-                        <li className="hover:underline transition cursor-pointer">Contact Us</li>
+                        { paths?.map(path => (
+                            <li className="hover:underline transition cursor-pointer">
+                                <Link to={path.link}>{path.pathName}</Link>
+                            </li>
+                        )) }
                     </ul>
                 </div>
 

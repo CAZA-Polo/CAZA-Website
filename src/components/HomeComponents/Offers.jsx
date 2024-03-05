@@ -3,6 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from "react-icons/io";
+import { AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Offers = () => {
 
@@ -41,29 +43,31 @@ const Offers = () => {
     ])
 
     return (
-        <section className="p-32 container mx-auto">
+        <section className="md:p-32 p-10 container mx-auto">
             <div className="mt-5 text-center flex justify-center">
-                <div className="w-1/2">
-                    <h1 className="text-5xl font-semibold text-gray-700">What we offer</h1>
-                    <p className="text-sm">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
+                <div className="md:w-1/2">
+                    <h1 className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</h1>
+                    <p className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
                     We also offer staff augmentation.
                     </p>
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 justify-items-center gap-5 mt-10">
-                { offers?.map(offer => (
-                    <div key={offer.id} className="flex flex-col hover:scale-105 transition w-full border border-gray-100 rounded-md shadow-lg overflow-hidden">
-                        <img className="w-full h-[191.29px] object-cover" src={offer.bgImage} alt={offer.title} />
+            <div className="grid md:grid-cols-3 justify-items-center gap-5 mt-10">
+                <AnimatePresence>
+                    { offers?.map(offer => (
+                        <motion.div key={offer.id} className="flex flex-col hover:scale-105 transition w-full border border-gray-100 rounded-md shadow-lg overflow-hidden">
+                            <img className="w-full h-[191.29px] object-cover" src={offer.bgImage} alt={offer.title} />
 
-                        <div className="p-3">
-                            <h2 className="font-semibold">{offer.title}</h2>
-                            <p className="text-sm text-justify">{offer.description}</p>
+                            <div className="p-3">
+                                <h2 className="font-semibold md:text-xl text-sm">{offer.title}</h2>
+                                <p className="md:text-sm text-xs text-justify">{offer.description}</p>
 
-                            <Link className="mt-3 text-sm text-blue-500 flex items-center gap-1 hover:underline transition font-semibold" to="#"><IoIosArrowDropright />Learn more</Link>
-                        </div>
-                    </div>
-                )) }
+                                <Link className="mt-3 md:text-sm text-xs text-blue-500 flex items-center gap-1 hover:underline transition font-semibold" to="/services"><IoIosArrowDropright />Learn more</Link>
+                            </div>
+                        </motion.div>
+                    )) }
+                </AnimatePresence>
             </div>
         </section>
     )

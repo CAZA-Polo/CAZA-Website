@@ -18,7 +18,7 @@ const TopBanner = () => {
     return (
         <Carousel className="" showThumbs={false} autoPlay={true} interval={1500} showArrows={false} swipeable={true} showIndicators={true} infiniteLoop showStatus={false}>
             { images?.map((image,id) => (
-                <img key={id} className="h-[600px] object-cover" src={image.photo} alt="banners" />
+                <img key={id} className="md:h-[600px] h-[300px] object-cover" src={image.photo} alt="banners" />
             )) }
         </Carousel>
     )

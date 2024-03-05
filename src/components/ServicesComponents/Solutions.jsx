@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Solutions = () => {
 
@@ -42,7 +43,9 @@ const Solutions = () => {
                     <div className="p-32 w-1/2 bg-gray-100">
                         <h1 className="font-semibold text-3xl text-gray-700">{service.title}</h1>
                         <p className="text-sm text-gray-700 text-justify mt-3">{service.description}</p>
-                        <button className="p-2 text-sm bg-blue-500 rounded-sm text-gray-100 mt-2 hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500 transition">Contact Us</button>
+                        <button className="p-2 text-sm bg-blue-500 rounded-sm text-gray-100 mt-2 hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500 transition">
+                            <Link to='/contact'>Contact Us</Link>
+                        </button>
                     </div>
                 </div>
             )) }

@@ -5,6 +5,7 @@ import { MdArrowDropUp } from "react-icons/md";
 import { useEffect,useState } from 'react';
 
 const GlobalLayout = () => {
+
     const [isVisible,setIsVisible] = useState(true);
     const onScrollEvent = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -21,6 +22,7 @@ const GlobalLayout = () => {
     }
 
     useEffect(() => {
+        setIsVisible(false);
         window.addEventListener('scroll',onScrollEvent)
 
         return () => window.removeEventListener('scroll',onScrollEvent); 

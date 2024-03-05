@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <>
         <Helmet>
-            <title>CAZA | Home</title>
+            <title>CAZA Technology Solutions Inc. | Home</title>
         </Helmet>
         <main>
             <Banner />

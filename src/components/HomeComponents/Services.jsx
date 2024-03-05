@@ -49,12 +49,12 @@ const Services = () => {
 
     return (
         <div className="caza__blue">
-            <div className="grid grid-cols-3 container mx-auto">
+            <div className="grid md:grid-cols-3 container mx-auto">
                 { services?.map(service => (
                     <div key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
                         {service.serviceSvg}
-                        <h2 className="text-xl font-semibold">{service.title}</h2>
-                        <p>{service.description}</p>
+                        <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
+                        <p className="md:text-sm text-xs">{service.description}</p>
                     </div>
                 )) }
             </div>
