@@ -19,6 +19,10 @@
   background-color: var(--caza-blue);
 }
 
+.caza__text--blue {
+  color: var(--caza-blue);
+}
+
 /* Poppins Font */
 .poppins-thin {
   font-family: "Poppins", sans-serif;
