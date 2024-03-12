@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Banner = () => {
 
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-12 md:container md:mx-auto">
+        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-10 md:container md:mx-auto">
             <div className="flex flex-col gap-4 text-gray-700 md:w-1/2">
                 <motion.h1
                 initial={{opacity:0, y:-50}}
