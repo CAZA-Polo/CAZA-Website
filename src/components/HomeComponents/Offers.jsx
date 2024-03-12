@@ -43,7 +43,7 @@ const Offers = () => {
     ])
 
     return (
-        <section className="md:p-32 p-10 container mx-auto">
+        <section className="md:p-24 p-10 container mx-auto">
             <div className="text-center flex justify-center">
                 <div className="md:w-1/2">
                     <h1 className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</h1>
