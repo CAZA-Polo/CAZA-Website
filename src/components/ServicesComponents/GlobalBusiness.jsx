@@ -27,7 +27,7 @@ const GlobalBusiness = () => {
     ])
 
     return (
-        <section className="md:p-32 p-16 global__bg">    
+        <section className="md:p-24 p-10 global__bg">    
             <div className="container mx-auto">
                 <h1 className="text-gray-100 md:text-4xl text-xl text-center font-semibold">Global Business Services</h1>
                 

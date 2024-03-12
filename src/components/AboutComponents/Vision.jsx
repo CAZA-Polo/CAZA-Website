@@ -1,6 +1,6 @@
 const Vision = () => {
     return (
-        <section className="md:p-32 p-16 flex flex-col gap-20 container mx-auto">
+        <section className="md:p-24 p-10 flex flex-col gap-20 container mx-auto">
             <div className="grid md:grid-cols-2 grid-cols-3 justify-items-center md:items-start items-center">
                 <div className="col-span-2 md:col-auto">
                     <h1 className="md:text-3xl text-xl font-semibold text-blue-500">Our Vision</h1>

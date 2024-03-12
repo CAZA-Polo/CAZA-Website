@@ -1,6 +1,6 @@
 const History = () => {
     return (
-        <section className="md:p-32 p-16 container mx-auto">
+        <section className="md:p-24 p-10 container mx-auto">
             <div className="grid md:grid-cols-2 gap-5 md:gap-0 justify-items-center items-center">
                 <div>
                     <h1 className="md:text-3xl text-xl font-semibold text-blue-500">Our History</h1>

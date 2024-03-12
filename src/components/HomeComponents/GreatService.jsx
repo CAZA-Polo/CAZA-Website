@@ -25,7 +25,7 @@ const GreatService = () => {
     const [currVal,setCurrVal] = useState('');
 
     return (
-        <section className="md:p-32 p-16 h-[500px] grid md:grid-cols-2 container mx-auto">
+        <section className="md:p-24 p-10 h-[500px] grid md:grid-cols-2 container mx-auto">
             <div className="flex flex-col justify-center">
                 <div className="text-gray-700">
                     <h1 className="font-semibold md:text-3xl text-xl">We are providing great services</h1>

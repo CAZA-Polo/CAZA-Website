@@ -18,7 +18,7 @@ const Comments = () => {
     ])
 
     return (
-        <section className="md:p-32 p-16 thought-bg">
+        <section className="md:p-24 p-10 thought-bg">
             <div className="container mx-auto flex items-center justify-center relative">
                 <Carousel className="md:w-1/2 w-full" showThumbs={false} autoPlay={true} interval={3000} showArrows={true} swipeable={true} showIndicators={false} infiniteLoop showStatus={false}>
                     { comments?.map(comment => (

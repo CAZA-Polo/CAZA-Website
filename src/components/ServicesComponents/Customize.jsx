@@ -32,7 +32,7 @@ const Customize = () => {
     ])
 
     return (
-        <section className="md:p-32 p-16 bg-gray-100">
+        <section className="md:p-24 p-10 bg-gray-100">
             <div className="w-full container mx-auto">
                 <div className="flex justify-center">
                     <div className="md:w-1/2 self-center">

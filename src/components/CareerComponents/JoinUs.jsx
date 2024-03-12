@@ -4,7 +4,7 @@ const JoinUs = () => {
     
     return (
         <>
-        <section className="md:p-32 p-16 bg-gray-100">
+        <section className="md:p-24 p-10 bg-gray-100">
             <div className="w-full container mx-auto">
                 <div className="grid md:grid-cols-2 p-2 md:gap-20 gap-10">
                     <div>

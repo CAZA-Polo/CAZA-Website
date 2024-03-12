@@ -39,7 +39,7 @@ const Stories = () => {
     ]);
 
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-16 container mx-auto">
+        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-10 container mx-auto">
             <div className="flex flex-col gap-3 text-gray-700">
                 <h1 className="font-semibold text-center md:text-5xl text-xl md:mt-10">Our Success Story</h1>
                 

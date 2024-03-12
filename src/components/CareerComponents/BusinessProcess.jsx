@@ -54,7 +54,7 @@ const BusinessProcess = () => {
     ]);
 
     return (
-        <section className="md:p-32 p-16 bg-gray-100 container mx-auto">
+        <section className="md:p-24 p-10 bg-gray-100 container mx-auto">
             <h1 className="md:text-4xl text-xl font-semibold text-gray-700 text-center">Our Business Process</h1>
             <div className="md:grid md:grid-cols-4 md:justify-items-stretch gap-5 md:mt-10 hidden">
                 { processes?.map(process => (

@@ -27,7 +27,7 @@ const WhatWeDo = () => {
     ])
 
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-16 p-10 what-we-do-bg">
+        <section className="items-center justify-center gap-4 flex flex-col w-full md:p-24 p-10 what-we-do-bg">
             <div className="flex flex-col items-center gap-3 text-white">
                 <h1 className="md:text-4xl text-xl font-semibold">What We Do</h1>
                 <p className="md:text-sm text-xs">We help the banks to customize their products and upgrade their systems.</p>

@@ -1,6 +1,6 @@
 const Leaders = () => {
     return (
-        <section className="md:p-32 p-16 leaders__bg">
+        <section className="md:p-25 p-10 leaders__bg">
             <div className="grid md:grid-cols-2 justify-items-center items-center container mx-auto">
                 <img className="w-1/2" src="/images/about/activ2touch-570x700.png" alt="Leaders" />
                 <div>

@@ -2,7 +2,7 @@ import { FaSquareFacebook,FaSquareTwitter,FaSquareGooglePlus } from "react-icons
 
 const ExperiencedTeam = () => {
     return (
-        <section className="md:p-32 p-16">
+        <section className="md:p-24 p-10">
             <div className="grid md:grid-cols-2 justify-items-center items-center gap-5 md:gap-0 container mx-auto">
                 <div>
                     <h1 className="md:text-3xl text-xl font-semibold text-blue-500">Contact Our Experienced Team</h1>
