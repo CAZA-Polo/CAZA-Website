@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useState,useRef } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from "react-icons/io";
 import { AnimatePresence } from 'framer-motion';
-import { motion } from 'framer-motion';
+import { motion,useInView } from 'framer-motion';
 
 const Offers = () => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref);
 
     const [offers,setOffers] = useState([
         {
@@ -46,10 +49,20 @@ const Offers = () => {
         <section className="md:p-24 p-10 container mx-auto">
             <div className="text-center flex justify-center">
                 <div className="md:w-1/2">
-                    <h1 className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</h1>
-                    <p className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
+                    <motion.h1
+                    ref={ref}
+                    initial={{opacity:0, y:-75}}
+                    animate={ isInView && {opacity:1,y:0}} 
+                    transition={{duration:0.5}}
+                    className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</motion.h1>
+                    <motion.p 
+                    ref={ref}
+                    initial={{opacity:0, y:30}}
+                    animate={ isInView && {opacity:1,y:0}} 
+                    transition={{duration:0.5}}
+                    className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
                     We also offer staff augmentation.
-                    </p>
+                    </motion.p>
                 </div>
             </div>
 
