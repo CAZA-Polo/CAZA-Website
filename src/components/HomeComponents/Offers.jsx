@@ -56,8 +56,10 @@ const Offers = () => {
             {/* For Desktop */}
             <div className="md:flex md:flex-wrap justify-center gap-5 mt-10 hidden">
                 { offers?.map(offer => (
-                    <div key={offer.id} className="flex flex-col transition w-1/4 border-2 border-blue-200 rounded-md shadow-lg overflow-hidden">
-                        <img className="w-full h-[191.29px] object-cover" src={offer.bgImage} alt={offer.title} />
+                    <div key={offer.id} className="flex flex-col transition w-1/4 border-2 h-auto border-blue-100 rounded-md shadow-lg overflow-hidden">
+                        <div className="w-full h-full overflow-hidden">
+                            <img className="w-full h-[199.29px] z-10 object-cover cursor-pointer hover:scale-110 transition" src={offer.bgImage} alt={offer.title} />
+                        </div>
 
                         <div className="p-3 flex flex-col justify-between h-full">
                             <div>

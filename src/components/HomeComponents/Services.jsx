@@ -5,7 +5,6 @@ const Services = () => {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
-    console.log(isInView);
 
     const [services,setServices] = useState([
         {

@@ -19,7 +19,7 @@ const TopBanner = () => {
 
     return (
         <div className="flex container mx-auto">
-            <div className="flex flex-col justify-center gap-7 p-4 text-gray-700 md:w-1/2">
+            <div className="flex flex-col justify-center gap-7 p-8 text-gray-700 md:w-1/2">
                 <motion.h1
                 initial={{opacity:0, y:-50}}
                 animate={{opacity:1,y:0}} 

@@ -115,13 +115,13 @@ const Navbar = () => {
                 </div> */}
 
                 {/* For Desktop */}
-                <div className={`w-full ${!isVisible ? 'mt-0' : ''} z-50 flex justify-between items-center `}>
+                <div className={`w-full ${!isVisible ? 'mt-0' : ''} z-50 flex justify-between items-center px-10`}>
                     <img onClick={() => navigate('/') } className="w-[128px] cursor-pointer h-[65px] mx-5 object-fit" src="./images/CAZA_Transparent.png" alt="CAZA Logo" />
                     <ul className="flex justify-center items-center gap-8 font-normal text-gray-700 text-sm">
                         { paths?.map((path,id) => (
                             <li onClick={ (path.link !== '/about' && pathName !== 'About') ? scrollToTop : undefined } key={id}>
                                 { path.name !== 'About' ? 
-                                    <Link className={`${path.name === 'Contact Us' && 'caza__blue p-2 rounded-full text-gray-100' } hover:border-b hover:border-gray-700 hover:transition flex items-center gap-1`} to={path.link}>{path.name}</Link> 
+                                    <Link className={`${path.name === 'Contact Us' && 'caza__blue p-2 rounded-full text-gray-100'} ${pathName === path.link && 'bg-blue-500 p-1 text-white rounded-sm'} hover:border-b hover:border-gray-700 hover:transition flex items-center gap-1`} to={path.link}>{path.name}</Link> 
                                         :
                                     <button onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className="hover:border-b hover:border-gray-700 hover:transition flex items-center gap-1 group relative">{path.name} {path.icon}
                                         <AnimatePresence>
@@ -134,7 +134,7 @@ const Navbar = () => {
                                             transition={{ duration:0.3 }}
                                             className="group-hover:flex hidden absolute w-[200px] z-50 bg-gray-100 top-5 p-2 rounded-md flex-col items-start">
                                                 { aboutChildren?.map(child => (
-                                                    <Link key={child.id} className="text-sm border border-gray-300 w-full text-start p-2 hover:bg-blue-500 hover:text-white transition" to={child.link}>{child.name}</Link>
+                                                    <Link key={child.id} className={`text-sm border border-gray-300 w-full text-start p-2 hover:bg-blue-500 hover:text-white transition ${pathName === child.link && 'bg-blue-500 p-1 text-white rounded-sm'}`} to={child.link}>{child.name}</Link>
                                                 )) }
                                             </motion.div>
                                         }
