@@ -53,21 +53,40 @@ const Services = () => {
     ])
 
     return (
-        <div ref={ref} className="caza__blue">
-            <div className="grid md:grid-cols-3 container mx-auto">
-                { services?.map(service => (
-                    <motion.div 
-                        initial={{ opacity:0,rotateY: 180 }}
-                        animate={ isInView && { opacity:1,rotateY:0 }}
-                        transition={{duration: 1}}
-                        key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
-                        {service.serviceSvg}
-                        <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
-                        <p className="md:text-sm text-xs">{service.description}</p>
-                    </motion.div>
-                )) }
+        <section ref={ref}>
+            <div className="caza__blue">
+                <div className="container mx-auto md:grid md:grid-cols-3">
+                    { services?.map(service => (
+                        service.id < 4 && 
+                        <motion.div 
+                            initial={{ opacity:0,rotateY: 180 }}
+                            animate={ isInView && { opacity:1,rotateY:0 }}
+                            transition={{duration: 1}}
+                            key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
+                            {service.serviceSvg}
+                            <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
+                            <p className="md:text-sm text-xs">{service.description}</p>
+                        </motion.div>  
+                    )) }
+                </div>
             </div>
-        </div>
+            <div className="bg-blue-600">
+                <div className="container mx-auto md:grid md:grid-cols-3">
+                    { services?.map(service => (
+                        service.id > 3 && 
+                        <motion.div 
+                            initial={{ opacity:0,rotateY: 180 }}
+                            animate={ isInView && { opacity:1,rotateY:0 }}
+                            transition={{duration: 1}}
+                            key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
+                            {service.serviceSvg}
+                            <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
+                            <p className="md:text-sm text-xs">{service.description}</p>
+                        </motion.div>
+                    )) }
+                </div>
+            </div>
+        </section>
     )
 }
 
