@@ -12,9 +12,10 @@ const Contact = () => {
         </Helmet>
         <main>
             <Banner />
-            <ExperiencedTeam />
-            <CAZALocation />
             <Message />
+            {/* <ExperiencedTeam /> */}
+            <CAZALocation />
+           
             <Footer />
         </main>
         </>

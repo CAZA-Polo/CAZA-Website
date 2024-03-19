@@ -24,7 +24,7 @@ const Home = () => {
             {/* <Stories /> */}
             {/* <Comments /> */}
             <GreatService />
-            <Message />
+            {/* <Message /> */}
             <Footer />
         </main>
         </>

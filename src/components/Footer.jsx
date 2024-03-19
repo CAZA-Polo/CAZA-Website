@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center bg-gray-800 p-5">
-                <p className="text-gray-100 md:text-sm text-xs">Copyright &copy; 2018 All Rights Reserved | CAZA Technology Solutions Inc.</p>
+                <p className="text-gray-100 md:text-sm text-xs">Copyright &copy; 2024 All Rights Reserved | CAZA Technology Solutions Inc.</p>
             </div>
         </footer>
     )
