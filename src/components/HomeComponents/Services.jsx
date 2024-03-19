@@ -1,10 +1,17 @@
-import { useState,useRef } from 'react';
-import { useInView,motion, AnimatePresence } from "framer-motion"
+import { useState,useEffect } from 'react';
+import { motion, useAnimation } from "framer-motion"
+
+import animateHook from '../../hooks/animateHook';
+
+const animateVariant = {
+    initial: { opacity:0, rotateY: 180, transition: { duration: 1 } },
+    animate: { opacity:1, rotateY:0, transition: { duration: 1 } },
+}
 
 const Services = () => {
 
-    const ref = useRef(null);
-    const isInView = useInView(ref);
+
+    const { ref,controls } = animateHook(animateVariant.animate, animateVariant.initial);
 
     const [services,setServices] = useState([
         {
@@ -57,10 +64,10 @@ const Services = () => {
                 <div className="container mx-auto md:grid md:grid-cols-3">
                     { services?.map(service => (
                         service.id < 4 && 
-                        <motion.div 
-                            initial={{ opacity:0,rotateY: 180 }}
-                            animate={ isInView && { opacity:1,rotateY:0 }}
-                            transition={{duration: 1}}
+                        <motion.div
+                            variants={animateVariant}
+                            initial="initial"
+                            animate={controls}
                             key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
                             {service.serviceSvg}
                             <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
@@ -74,9 +81,9 @@ const Services = () => {
                     { services?.map(service => (
                         service.id > 3 && 
                         <motion.div 
-                            initial={{ opacity:0,rotateY: 180 }}
-                            animate={ isInView && { opacity:1,rotateY:0 }}
-                            transition={{duration: 1}}
+                            variants={animateVariant}
+                            initial="initial"
+                            animate={controls}
                             key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
                             {service.serviceSvg}
                             <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
