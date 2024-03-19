@@ -18,7 +18,7 @@ const TopBanner = () => {
     ])
 
     return (
-        <div className="flex container mx-auto">
+        <div className="flex md:flex-row flex-col container mx-auto">
             <div className="flex flex-col justify-center gap-7 p-8 text-gray-700 md:w-1/2">
                 <motion.h1
                 initial={{opacity:0, y:-50}}
@@ -40,16 +40,16 @@ const TopBanner = () => {
                 animate={{opacity:1,y:0}} 
                 transition={{duration:0.5}}
                 className="flex justify-start">
-                    <Link to='/about' className="rounded-md w-1/4 bg-blue-500 md:p-2 p-1 text-center text-gray-100 hover:bg-transparent hover:border-blue-500 hover:border hover:text-blue-500 transition md:text-sm text-sm">Read More</Link>
+                    <Link to='/about' className="rounded-md md:w-1/4 w-1/3 bg-blue-500 md:p-2 p-1 text-center text-gray-100 hover:bg-transparent hover:border-blue-500 hover:border hover:text-blue-500 transition md:text-sm text-xs">Read More</Link>
                 </motion.div >                                    
 
             </div>
-            <div className="w-1/2">
-            <Carousel className="" showThumbs={false} autoPlay={true} interval={1500} showArrows={false} swipeable={true} showIndicators={true} infiniteLoop showStatus={false}>
-                { images?.map((image,id) => (
-                    <img key={id} className="md:h-[600px] h-[300px] object-cover" src={image.photo} alt="banners" />
-                )) }
-            </Carousel>
+            <div className="md:w-1/2">
+                <Carousel showThumbs={false} autoPlay={true} interval={2000} showArrows={false} swipeable={true} showIndicators={true} infiniteLoop showStatus={false}>
+                    { images?.map((image,id) => (
+                        <img key={id} className="md:h-[600px] h-[300px] md:object-fit object-cover" src={image.photo} alt="banners" />
+                    )) }
+                </Carousel>
             </div>
         </div>
     )

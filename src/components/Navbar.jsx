@@ -121,9 +121,9 @@ const Navbar = () => {
                         { paths?.map((path,id) => (
                             <li onClick={ (path.link !== '/about' && pathName !== 'About') ? scrollToTop : undefined } key={id}>
                                 { path.name !== 'About' ? 
-                                    <Link className={`${path.name === 'Contact Us' && 'caza__blue p-2 rounded-full text-gray-100'} ${pathName === path.link && 'bg-blue-500 p-1 text-white rounded-sm'} hover:border-b hover:border-gray-700 hover:transition flex items-center gap-1`} to={path.link}>{path.name}</Link> 
+                                    <Link className={`${path.name === 'Contact Us' && 'caza__blue p-2 rounded-full text-gray-100'} ${pathName === path.link && 'bg-blue-500 p-1 text-white rounded-sm'} hover:transition flex items-center gap-1`} to={path.link}>{path.name}</Link> 
                                         :
-                                    <button onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className="hover:border-b hover:border-gray-700 hover:transition flex items-center gap-1 group relative">{path.name} {path.icon}
+                                    <button onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className="hover:transition flex items-center gap-1 group relative">{path.name} {path.icon}
                                         <AnimatePresence>
                                         { isHover && 
                                             <motion.div
