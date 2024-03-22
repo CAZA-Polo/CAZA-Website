@@ -3,10 +3,29 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from "react-icons/io";
-import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
+import animateHook from '../../hooks/animateHook';
+
+const titleVariant = {
+    initial: { opacity:0, y:-50, transition:{ duration:0.5 } },
+    animate: { opacity:1,y:0, transition:{ duration:0.5 } }
+}   
+
+const descVariant = {
+    initial: { opacity:0, y:20, transition:{ duration:0.5 } },
+    animate: { opacity:1,y:0, transition:{ duration:0.5 } }
+}
+
+const cardVariant = {
+    initial: { opacity:0, rotateY: 90, transition: { duration: 0.5 } },
+    animate: { opacity:1, rotateY:0, transition: { duration: 0.5 } },
+}
 
 const Offers = () => {
+
+    const { ref:titleRef,controls:titleControl } = animateHook(titleVariant.animate,titleVariant.initial);
+    const { ref:descRef,controls:descControl } = animateHook(descVariant.animate,descVariant.initial);
+    const { ref:cardRef,controls:cardControl} = animateHook(cardVariant.animate,cardVariant.initial);
 
     const [offers,setOffers] = useState([
         {
@@ -44,19 +63,32 @@ const Offers = () => {
 
     return (
         <section className="md:p-24 p-10 container mx-auto">
-            <div className="text-center flex justify-center">
+            <div ref={titleRef} className="text-center flex justify-center">
                 <div className="md:w-1/2">
-                    <h1 className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</h1>
-                    <p className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
+                    <motion.h1 
+                    variants={titleVariant}
+                    animate={titleControl}
+                    initial="initial"
+                    className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</motion.h1>
+                    <motion.p
+                    ref={descRef}
+                    variants={descVariant}
+                    animate={descControl}
+                    initial="initial"
+                    className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
                     We also offer staff augmentation.
-                    </p>
+                    </motion.p>
                 </div>
             </div>
 
             {/* For Desktop */}
-            <div className="md:flex md:flex-wrap justify-center gap-5 mt-10 hidden">
+            <div ref={cardRef} className="md:flex md:flex-wrap justify-center gap-5 mt-10 hidden">
                 { offers?.map(offer => (
-                    <div key={offer.id} className="flex flex-col transition w-1/4 border-2 h-auto border-blue-100 rounded-md shadow-lg overflow-hidden">
+                    <motion.div key={offer.id}
+                    variants={cardVariant}
+                    animate={cardControl}
+                    initial="initial"
+                    className="flex flex-col transition w-1/4 border-2 h-auto border-blue-100 rounded-md shadow-lg overflow-hidden">
                         <div className="w-full h-full overflow-hidden">
                             <img className="w-full h-[199.29px] z-10 object-cover cursor-pointer hover:scale-110 transition" src={offer.bgImage} alt={offer.title} />
                         </div>
@@ -69,7 +101,7 @@ const Offers = () => {
 
                             <Link className="mt-3 md:text-sm text-xs text-blue-500 flex items-center gap-1 hover:underline transition font-semibold" to="/services"><IoIosArrowDropright />Learn more</Link>
                         </div>
-                    </div>
+                    </motion.div>
                 )) }
             </div>
 

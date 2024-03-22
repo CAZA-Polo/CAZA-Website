@@ -1,7 +1,6 @@
-import { useState,useEffect } from 'react';
-import { motion, useAnimation } from "framer-motion"
-
-import animateHook from '../../hooks/animateHook';
+import { useState } from 'react';
+import { motion } from "framer-motion"
+import animateHook from '../../hooks/animateHook';  
 
 const animateVariant = {
     initial: { opacity:0, rotateY: 180, transition: { duration: 1 } },
@@ -9,7 +8,6 @@ const animateVariant = {
 }
 
 const Services = () => {
-
 
     const { ref,controls } = animateHook(animateVariant.animate, animateVariant.initial);
 
