@@ -203,3 +203,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* *jeric css */
+
+.title {
+  color: red;
+  font-size: x-large;
+}

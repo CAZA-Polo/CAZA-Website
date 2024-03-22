@@ -76,7 +76,7 @@ const Footer = () => {
                     <p className="text-gray-100 md:text-sm text-xs">Copyright &copy; 2024 All Rights Reserved | CAZA Technology Solutions Inc.</p>
                 </div>
                 <div className="text-gray-100 md:text-sm text-xs flex items-center gap-2">
-                    <p className="cursor-pointer">Privacy Policy</p>
+                    <Link to="/privacy-policy"><p className="cursor-pointer">Privacy Policy</p></Link>
                     <p>|</p>
                     <p className="cursor-pointer">Terms of Services</p>
                 </div>

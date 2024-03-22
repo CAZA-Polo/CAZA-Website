@@ -8,6 +8,9 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Career from "./pages/Career";
 import Team from "./pages/Team";
+import NotFound1 from "./pages/NotFound1";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+
 
 function App() {
   
@@ -22,8 +25,9 @@ function App() {
             <Route path='/products' element={<Product />} />
             <Route path='/career' element={<Career />} />
             <Route path='/team' element={<Team />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           </Route>
-          <Route path='*' element={<NotFound />} />
+          <Route path='*' element={<NotFound1 />} />
       </Route>
     )
   )
