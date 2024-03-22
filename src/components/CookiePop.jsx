@@ -7,7 +7,7 @@ const CookiePop = () => {
     const cookiePolicy = <Link className="font-bold underline" to='/cookie-policy'>Cookie Policy</Link>;
 
     return (
-        <div className="fixed bottom-10 justify-center flex items-center">
+        <div className="fixed bottom-10 justify-center flex items-center container mx-auto">
             <div className="bg-black text-gray-100 bg-opacity-80 p-4 rounded-md w-3/4 grid grid-cols-3">
                 <div className="col-span-2">
                     <h1 className="text-xl font-semibold">Cookie Notice</h1>
