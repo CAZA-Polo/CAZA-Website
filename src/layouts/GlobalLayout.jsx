@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 import { MdArrowDropUp } from "react-icons/md";
 import { useEffect,useState } from 'react';
+import CookiePop from '../components/CookiePop';
 
 const GlobalLayout = () => {
 
@@ -34,6 +35,7 @@ const GlobalLayout = () => {
                 <Navbar />
                 <Outlet />
                 { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce caza__blue"><MdArrowDropUp /></button> }
+                <CookiePop />
             </main>
         </ScrollToTop>
     )
