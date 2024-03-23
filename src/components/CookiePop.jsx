@@ -1,14 +1,28 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import animateHook from '../hooks/animateHook';
+
+const cookieVariant = {
+    initial: { opacity:0, scale: 0, transition: { duration: 1 } },
+    animate: { opacity:1, scale: 1, transition: { duration: 1 }}
+}
 
 const CookiePop = () => {
+
+    const { ref,controls } = animateHook(cookieVariant.animate,cookieVariant.initial);
 
     const privacyPolicyPage = <Link className="font-bold underline" to='/privacy-policy'>Data Privacy Policy</Link>;
     const cookiePolicy = <Link className="font-bold underline" to='/cookie-policy'>Cookie Policy</Link>;
 
     return (
         <div className="fixed bottom-10 justify-center flex items-center container mx-auto">
-            <div className="bg-black text-gray-100 bg-opacity-80 p-4 rounded-md w-3/4 grid grid-cols-3">
+            <motion.div
+            ref={ref} 
+            variants={cookieVariant}
+            animate={controls}
+            initial="initial"
+            className="bg-black text-gray-100 bg-opacity-80 p-4 rounded-md w-3/4 grid grid-cols-3">
                 <div className="col-span-2">
                     <h1 className="text-xl font-semibold">Cookie Notice</h1>
                     <p className="text-sm">We use cookies to ensure you receive the best experience from our website. By clicking "I AGREE" or continuing to use the website, 
@@ -19,7 +33,7 @@ const CookiePop = () => {
                     <button className="border border-gray-100 rounded-md text-white p-2 w-3/4">Decline</button>
                     <button className="bg-blue-500 text-gray-100 rounded-md p-2 w-3/4">Accept</button>
                 </div>  
-            </div>
+            </motion.div>
         </div>
     )
 }
