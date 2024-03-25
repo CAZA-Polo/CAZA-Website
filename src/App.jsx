@@ -11,7 +11,7 @@ import Team from "./pages/Team";
 import NotFound1 from "./pages/NotFound1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
-
+import GlobalProvider from "./helpers/GlobalProvider";
 
 function App() {
   
@@ -34,7 +34,11 @@ function App() {
     )
   )
 
-  return <RouterProvider router={router} />;
+  return (
+    <GlobalProvider>
+      <RouterProvider router={router} />
+    </GlobalProvider>
+  );
 }
 
 export default App

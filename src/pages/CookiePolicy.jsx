@@ -30,7 +30,7 @@ const CookiePolicy = () => {
 
                     <ul className="list-disc ml-10 mt-5">
                         <li className="text-lg text-sky-950 font-medium"><b>Strictly Necessary Cookies.</b> These cookies are necessary for the website to function and cannot be switched off in our systems. CAZA embeds cookies that are essential for navigating and enabling functionalities such as local device authentication, animation, and image caching. These cookies are turned on by default. If you set your browser to block these cookies, some parts of the site will not work.</li>
-                        <li className="text-lg text-sky-950 font-medium"><b>Performance Cookies.</b>CAZA uses cookies to understand how visitors use the website and its services in order to improve the over-all performance. Performance cookies provide insights into trends and usage patterns that are used for business analysis, website and service improvements, and for determining performance metrics.</li>
+                        <li className="text-lg text-sky-950 font-medium"><b>Performance Cookies.</b> CAZA uses cookies to understand how visitors use the website and its services in order to improve the over-all performance. Performance cookies provide insights into trends and usage patterns that are used for business analysis, website and service improvements, and for determining performance metrics.</li>
                     </ul>
                 </div>
 
@@ -50,39 +50,7 @@ const CookiePolicy = () => {
                     <h2 className="text-lg text-sky-950 font-medium">WEBSITE, COOKIES & SIMILAR TECHNOLOGIES TRACKING POLICY</h2>
                     <p className="text-sm text-sky-950 font-medium">When you visit our websites, cloud and online services, software products, or view our content on certain third-party websites, we collect information regarding your connection and your activity by using various online tracking technologies, such as cookies, web beacons, Local Storage, or HTML5. Information that is collected with these technologies may be necessary to operate the website or service, to improve performance, to help us understand how our online services are used, or to determine the interests of our users. We may use advertising partners to provide and assist in the use of such technologies on CAZA website and other sites.</p>
                 </div>
-            </div>
-            
-                {/* <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-            <ul className="text-lg text-sky-950 font-bold mt-4 space-y-1 list-disc list-inside">
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-            </ul>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-            <ul className="text-lg text-sky-950 font-bold mt-4 space-y-1 list-disc list-inside">
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-            </ul>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p> */}
+            </div>            
         </main>
         </>
     )
