@@ -2,8 +2,9 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import ScrollToTop from '../components/ScrollToTop';
 import { MdArrowDropUp } from "react-icons/md";
-import { useEffect,useState } from 'react';
+import { useEffect,useState,useContext } from 'react';
 import CookiePop from '../components/CookiePop';
+import { GlobalContext } from '../helpers/GlobalContext';
 
 const GlobalLayout = () => {
 
@@ -27,7 +28,9 @@ const GlobalLayout = () => {
         window.addEventListener('scroll',onScrollEvent)
 
         return () => window.removeEventListener('scroll',onScrollEvent); 
-    },[])
+    },[]);
+
+    const { cookieAgree } = useContext(GlobalContext);
 
     return (
         <ScrollToTop>
@@ -35,7 +38,7 @@ const GlobalLayout = () => {
                 <Navbar />
                 <Outlet />
                 { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce caza__blue"><MdArrowDropUp /></button> }
-                <CookiePop />
+                { !window.localStorage.getItem("userAgreed") && <CookiePop />  }
             </main>
         </ScrollToTop>
     )
