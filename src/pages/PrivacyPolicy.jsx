@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import Footer from "../components/Footer";
 
 const PrivacyPolicy = () => {
     return (
@@ -6,14 +7,15 @@ const PrivacyPolicy = () => {
         <Helmet>
             <title>CAZA | Privacy Policy</title>
         </Helmet>
-        <main className="md:p-24 p-16 bg-white list-outside text-justify">   
+        <main className="md:p-24 p-16 bg-gray-100 list-outside text-justify">   
             <div>
                 <h1 className="text-4xl text-sky-950 font-bold">Privacy Policy</h1>
             </div>
-                        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-sky-500"></hr>
 
-                <h1 className="mt-24 text-3xl text-sky-950 font-semibold upper-roman">  Background</h1>
-                        <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-sky-500"></hr>
+
+                <h2 className="mt-24 text-3xl text-sky-950 font-semibold upper-roman">Background</h2>
+                <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
 
                 <ul className="text-lg text-sky-950 font-bold mt-8 space-y-5 list-inside">
                     <li className="indent-10"> Republic Act No. 10173, also known as the Data Privacy Act of 2012 (DPA), aims to protect personal
@@ -33,8 +35,9 @@ const PrivacyPolicy = () => {
                         need to be observed and carried out within CAZA for specific circumstances (e.g., from collection to
                         destruction), directed toward the fulfillment and realization of the rights of data subjects.</li>
                 </ul>
+
                 <h1 className="mt-14 text-3xl text-sky-950 font-semibold upper-roman"> Introduction</h1>
-                        <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
+                <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
 
                 <ul className="text-lg text-sky-950 font-bold mt-8 space-y-5 list-inside">
                     <li className="indent-10"> This Privacy Manual is hereby adopted in compliance with Republic Act No. 10173 or the Data
@@ -84,9 +87,11 @@ const PrivacyPolicy = () => {
 
                 <ul className="text-lg text-sky-950 font-bold mt-8 space-y-5 list-decimal list-outside ml-10">
                     <li> A natural or juridical person, or any other body, who performs such functions as instructed by
-                        another person or organization; or</li>
+                        another person or organization; or
+                    </li>
                     <li> A natural person who processes personal data in connection with his or her personal, family, or
-                        household affairs;</li>
+                        household affairs;
+                    </li>
                 <ul>
                     <li>There is control if the natural or juridical person or any other body decides on what information is
                         collected, or the purpose or extent of its processing;</li>
@@ -355,10 +360,13 @@ const PrivacyPolicy = () => {
                     <li>Consent Form</li>
                     <li>Inquiry Form</li>
                     <li>Access Request Form</li>
-                    <li>Request for Correction, Amendment or Erasure Form </li>
+                    <li>Request for Correction, Amendment or Erasure Form</li>
                 </ul>
 
         </main>
+
+        <Footer />
+
         </>
     )
 }

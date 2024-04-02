@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import Footer from "../components/Footer";
 
 const CookiePolicy = () => {
     return (
@@ -51,39 +52,8 @@ const CookiePolicy = () => {
                     <p className="text-sm text-sky-950 font-normal">When you visit our websites, cloud and online services, software products, or view our content on certain third-party websites, we collect information regarding your connection and your activity by using various online tracking technologies, such as cookies, web beacons, Local Storage, or HTML5. Information that is collected with these technologies may be necessary to operate the website or service, to improve performance, to help us understand how our online services are used, or to determine the interests of our users. We may use advertising partners to provide and assist in the use of such technologies on CAZA website and other sites.</p>
                 </div>
             </div>
-            
-                {/* <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-            <ul className="text-lg text-sky-950 font-bold mt-4 space-y-1 list-disc list-inside">
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-            </ul>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p>
-            <ul className="text-lg text-sky-950 font-bold mt-4 space-y-1 list-disc list-inside">
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam.</li>
-            </ul>
-
-            <h1 className="mt-24 text-3xl text-sky-950 font-semibold">Lorem, ipsum.</h1>
-                    <hr className="w-16 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
-                <p className="mt-7 text-lg text-sky-950 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio nemo corporis iste excepturi dicta officiis. Inventore delectus voluptatibus consequatur?</p> */}
         </main>
+        <Footer />
         </>
     )
 }
