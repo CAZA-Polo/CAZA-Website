@@ -7,6 +7,7 @@ const PrivacyPolicy = () => {
         <Helmet>
             <title>CAZA | Privacy Policy</title>
         </Helmet>
+        
         <main className="md:p-24 p-16 bg-gray-100 list-outside text-justify">   
             <div>
                 <h1 className="text-4xl text-sky-950 font-bold">Privacy Policy</h1>
