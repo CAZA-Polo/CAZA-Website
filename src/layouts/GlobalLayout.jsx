@@ -8,6 +8,8 @@ import { GlobalContext } from '../helpers/GlobalContext';
 
 const GlobalLayout = () => {
 
+    const { cookieUserResponse } = useContext(GlobalContext);
+
     const [isVisible,setIsVisible] = useState(true);
     const onScrollEvent = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -25,12 +27,10 @@ const GlobalLayout = () => {
 
     useEffect(() => {
         setIsVisible(false);
-        window.addEventListener('scroll',onScrollEvent)
+        window.addEventListener('scroll',onScrollEvent);
 
         return () => window.removeEventListener('scroll',onScrollEvent); 
     },[]);
-
-    const { cookieAgree } = useContext(GlobalContext);
 
     return (
         <ScrollToTop>
@@ -38,7 +38,7 @@ const GlobalLayout = () => {
                 <Navbar />
                 <Outlet />
                 { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce caza__blue"><MdArrowDropUp /></button> }
-                { !window.localStorage.getItem("userAgreed") && <CookiePop />  }
+                <CookiePop /> 
             </main>
         </ScrollToTop>
     )
