@@ -35,12 +35,12 @@ const Footer = () => {
 
     return (
         <footer className="bg-gray-900">
-            <div className="grid grid-cols-5 gap-10 md:px-16 p-10 items-stretch justify-items-center text-gray-300 container mx-auto">
+            <div className="grid grid-cols-5 gap-10 md:px-16 p-10 items-stretch justify-items-start text-gray-300 container mx-auto">
                 <div className="hidden md:block col-span-1">
                     <img className="object-fit md:w-64 w-32" src="/images/CAZA_Transparent.png" alt="CAZA Logo" />
                 </div>
 
-                <div className="col-span-1">
+                <div className="col-span-2">
                     <h1 className="font-semibold md:text-lg text-sm">Useful Links</h1>
                     <ul className="text-xs md:text-sm">
                         { paths?.map(path => (
@@ -51,7 +51,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="col-span-2 md:col-span-2">
+                <div className="col-span-3 md:col-span-1">
                     <h1 className="font-semibold md:text-lg text-sm">Get In Touch</h1>
                     <div className="md:text-sm text-xs flex flex-col gap-1">
                         {/* <p>CAZA Technology Solutions Inc.</p> */}
@@ -61,9 +61,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="col-span-1">
+                <div className="col-span-2">
                     <h1 className="font-semibold md:text-lg text-sm">Follow Us</h1>
-                    <div className="flex gap-3 md:mt-0 mt-3 text-xl">
+                    <div className="flex gap-3 md:mt-0 mt-1 text-xl">
                         <FaSquareFacebook className="text-blue-700" />    
                         <FaSquareTwitter className="text-blue-500" />
                         <FaSquareGooglePlus className="text-red-500" />

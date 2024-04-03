@@ -48,7 +48,7 @@ const CookiePop = () => {
     }
 
     return (
-        <div className="fixed bottom-10 justify-center flex items-center container mx-auto">
+        <div className="fixed bottom-10 justify-center flex items-start container mx-auto">
             <AnimatePresence>
                 { cookieAgree.agree && 
                     <motion.div
@@ -58,16 +58,16 @@ const CookiePop = () => {
                         animate={checkIfAgreeCookies()}
                         initial="initial"
                         exit="exit"
-                        className={`bg-black text-gray-100 bg-opacity-80 p-4 rounded-md w-3/4 grid grid-cols-3 ${cookieUserResponse === true && 'hidden'}`}>
-                        <div className="col-span-2">
-                            <h1 className="text-xl font-semibold">Cookie Notice</h1>
-                            <p className="text-sm">We use cookies to ensure you receive the best experience from our website. By clicking "I AGREE" or continuing to use the website, 
+                        className={`bg-black text-gray-100 bg-opacity-80 p-4 rounded-md w-3/4 grid grid-cols-9 ${cookieUserResponse === true && 'hidden'}`}>
+                        <div className="col-span-10">
+                            <h1 className="md:text-xl text-lg font-semibold">Cookie Notice</h1>
+                            <p className="text-xs mt-3">We use cookies to ensure you receive the best experience from our website. By clicking "I AGREE" or continuing to use the website, 
                             you accept the use of cookies. Your data will be processed in accordance with our {privacyPolicyPage} and {cookiePolicy}.</p>
                         </div>
-
-                        <div className="flex flex-col items-center justify-center gap-2 text-sm mt-3">
-                            <button onClick={userDeclineCookie} className="border border-gray-100 rounded-md text-white p-2 w-3/4">DECLINE</button>
-                            <button onClick={userCookieAgree} className="bg-blue-500 text-gray-100 rounded-md p-2 w-3/4">I AGREE</button>
+                        <br></br>
+                        <div className="flex flex-row gap-5 text-sm items-start mt-3">
+                            <button onClick={userDeclineCookie} className="border border-gray-100 rounded-md text-white p-2 w-20">DECLINE</button>
+                            <button onClick={userCookieAgree} className="bg-blue-500 text-gray-100 rounded-md p-2 w-20">I AGREE</button>
                         </div>  
                     </motion.div>
                 }
