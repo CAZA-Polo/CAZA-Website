@@ -49,7 +49,7 @@ const CookiePolicy = () => {
 
                 <div>
                     <h2 className="md:text-lg text-base text-sky-950 font-medium"><b>WEBSITE, COOKIES & SIMILAR TECHNOLOGIES TRACKING POLICY</b></h2>
-                    <p className="mt-3 text-sm text-sky-950 font-normal">When you visit our websites, cloud and online services, software products, or view our content on certain third-party websites, we collect information regarding your connection and your activity by using various online tracking technologies, such as cookies, web beacons, Local Storage, or HTML5. Information that is collected with these technologies may be necessary to operate the website or service, to improve performance, to help us understand how our online services are used, or to determine the interests of our users. We may use advertising partners to provide and assist in the use of such technologies on CAZA website and other sites.</p>
+                    <p className="md:text-sm text-sm mt-3 text-sky-950 font-normal">When you visit our websites, cloud and online services, software products, or view our content on certain third-party websites, we collect information regarding your connection and your activity by using various online tracking technologies, such as cookies, web beacons, Local Storage, or HTML5. Information that is collected with these technologies may be necessary to operate the website or service, to improve performance, to help us understand how our online services are used, or to determine the interests of our users. We may use advertising partners to provide and assist in the use of such technologies on CAZA website and other sites.</p>
                 </div>
             </div>
         </main>
