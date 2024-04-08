@@ -26,7 +26,7 @@ const JoinUs = () => {
             </div>
         </section>
 
-        <section className="w-full md:p-24 p-16 joinus__bg">
+        <section className="w-full md:p-24 p-16 joinus1__bg">
             <div className="text-gray-100 grid md:grid-cols-3 justify-items-center items-center container mx-auto">
                 <span className="font-semibold md:text-5xl text-xl md:h-44 h-24 border-4 md:col-span-1 col-auto border-white md:w-44 w-24 flex items-center justify-center rounded-full bg-white bg-opacity-45">100%</span>
                 <p className="md:text-lg text-sm md:col-span-2 col-auto mt-5 md:mt-0"><b>CAZA Technology Solutions Inc.</b> deliver value to all the stakeholders and will attain excellence and leadership through such delivery of value. We strive to support the stakeholders in all activities related to us.</p>                        

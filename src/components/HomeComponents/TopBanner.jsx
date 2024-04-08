@@ -24,7 +24,7 @@ const TopBanner = () => {
             photo: '/images/banking-banner.jpg'
         },
         {
-            photo: '/images/DSC0114.jpg'
+            photo: '/images/Front.jpg'
         },
         {
             photo: '/images/ten-reasons-internet-banking_opt.jpg'

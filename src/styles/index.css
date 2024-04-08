@@ -197,6 +197,20 @@
   background-size: cover;
 }
 
+.joinus1__bg {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/Back.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.front__bg {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/Front.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .team__bg {
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/thought-bg.jpg');
   background-position: center;

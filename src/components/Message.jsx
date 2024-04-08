@@ -11,19 +11,19 @@ const Message = () => {
                     </div>
                     <div className="flex flex-col text-gray-700">
                         <label className="md:text-sm text-xs" htmlFor="name">Name</label>
-                        <input className="p-2 border border-gray rounded-sm outline-none md:placeholder:text-sm placeholder:text-xs text-sm text-black" placeholder="Your name" type="text" />
+                        <input required className="p-2 border border-gray rounded-sm outline-none md:placeholder:text-sm placeholder:text-xs text-sm text-black" placeholder="Your name" type="text" />
                     </div>
                     <div className="flex flex-col text-gray-700">
                         <label className="md:text-sm text-xs" htmlFor="email">Email Address</label>
-                        <input className="p-2 rounded-sm outline-none md:placeholder:text-sm placeholder:text-xs text-sm text-black" placeholder="Your email" type="email" />
+                        <input required className="p-2 rounded-sm outline-none md:placeholder:text-sm placeholder:text-xs text-sm text-black" placeholder="Your email" type="email" />
                     </div>
                     <div className="flex flex-col text-gray-700">
                         <label className="md:text-sm text-xs" htmlFor="subject">Subject</label>
-                        <input className="p-2 rounded-sm outline-none md:placeholder:text-sm placeholder:text-xs text-sm text-black" placeholder="Enter subject" type="text" />
+                        <input required className="p-2 rounded-sm outline-none md:placeholder:text-sm placeholder:text-xs text-sm text-black" placeholder="Enter subject" type="text" />
                     </div>
                     <div className="flex flex-col text-gray-700">
                         <label className="md:text-sm text-xs" htmlFor="name">Message</label>
-                        <textarea className="p-2 rounded-sm md:text-sm text-xs outline-none text-black"></textarea>
+                        <textarea required className="p-2 rounded-sm md:text-sm text-xs outline-none text-black"></textarea>
                     </div>
 
                     <button className="bg-white w-1/4 text-sm p-2 rounded-md text-blue-500">Send</button>
