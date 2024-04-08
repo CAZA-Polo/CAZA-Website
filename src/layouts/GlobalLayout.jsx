@@ -8,8 +8,9 @@ import { GlobalContext } from '../helpers/GlobalContext';
 
 const GlobalLayout = () => {
 
-    const { cookieUserResponse } = useContext(GlobalContext);
-
+    const { cookieUserResponse,cookiePop } = useContext(GlobalContext);
+    const { showCookiePop } = cookiePop;
+ 
     const [isVisible,setIsVisible] = useState(true);
     const onScrollEvent = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -37,8 +38,13 @@ const GlobalLayout = () => {
             <main className="bg-gray-100 h-full">
                 <Navbar />
                 <Outlet />
+<<<<<<< HEAD
                 { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100  text-4xl animate-bounce bg-sky-500"><MdArrowDropUp /></button> }
                 <CookiePop /> 
+=======
+                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce caza__blue"><MdArrowDropUp /></button> }
+                <CookiePop />
+>>>>>>> 0eaa1bf6d8ec4c002f9a76b097b5dfeba579535a
             </main>
         </ScrollToTop>
     )
