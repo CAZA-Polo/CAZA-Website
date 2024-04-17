@@ -62,20 +62,20 @@ const Offers = () => {
     ])
 
     return (
-        <section className="md:p-24 p-10 container mx-auto">
+        <section className="md:p-24 p-10x    container mx-auto">
             <div ref={titleRef} className="text-center flex justify-center">
                 <div className="md:w-1/2">
                     <motion.h1 
                     variants={titleVariant}
                     animate={titleControl}
                     initial="initial"
-                    className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</motion.h1>
+                    className="md:text-5xl text-2xl md:mt-10 md:mb-10 font-semibold text-gray-200">What we offer</motion.h1>
                     <motion.p
                     ref={descRef}
                     variants={descVariant}
                     animate={descControl}
                     initial="initial"
-                    className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
+                    className="md:text-base text-xs md:mt-5 text-gray-200">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
                     We also offer staff augmentation.
                     </motion.p>
                 </div>
@@ -88,18 +88,18 @@ const Offers = () => {
                     variants={cardVariant}
                     animate={cardControl}
                     initial="initial"
-                    className="flex flex-col transition w-1/4 border-2 h-auto border-blue-100 rounded-md shadow-lg overflow-hidden">
+                    className="flex flex-col transition w-1/4 h-auto bg-slate-300 rounded-md shadow-lg overflow-hidden">
                         <div className="w-full h-full overflow-hidden">
                             <img className="w-full h-[199.29px] z-10 object-cover cursor-pointer hover:scale-110 transition" src={offer.bgImage} alt={offer.title} />
                         </div>
 
-                        <div className="p-3 flex flex-col justify-between h-full">
+                        <div className="p-3 flex flex-col justify-between h-full text-slate-200 caza__blue">
                             <div>
                                 <h2 className="font-semibold md:text-lg text-sm">{offer.title}</h2>
                                 <p className="md:text-sm text-xs text-justify">{offer.description}</p>
                             </div>
 
-                            <Link className="mt-3 md:text-sm text-xs text-blue-500 flex items-center gap-1 hover:underline transition font-semibold" to="/services"><IoIosArrowDropright />Learn more</Link>
+                            <Link className="mt-3 md:text-sm text-xs text-blue-500 hover:text-sky-500 flex items-center gap-1 hover:underline transition font-semibold" to="/services"><IoIosArrowDropright />Learn more</Link>
                         </div>
                     </motion.div>
                 )) }

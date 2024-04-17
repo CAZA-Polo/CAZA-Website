@@ -58,7 +58,7 @@ const Services = () => {
 
     return (
         <section ref={ref}>
-            <div className="caza__blue">
+            <div className="bg-transparent">
                 <div className="container mx-auto md:grid md:grid-cols-3">
                     { services?.map(service => (
                         service.id < 4 && 
@@ -66,7 +66,7 @@ const Services = () => {
                             variants={animateVariant}
                             initial="initial"
                             animate={controls}
-                            key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
+                            key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center rounded-lg`}>
                             {service.serviceSvg}
                             <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
                             <p className="md:text-sm text-xs">{service.description}</p>
@@ -74,7 +74,7 @@ const Services = () => {
                     )) }
                 </div>
             </div>
-            <div className="bg-blue-600">
+            <div className="bg-transparent">
                 <div className="container mx-auto md:grid md:grid-cols-3">
                     { services?.map(service => (
                         service.id > 3 && 
@@ -82,7 +82,7 @@ const Services = () => {
                             variants={animateVariant}
                             initial="initial"
                             animate={controls}
-                            key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center`}>
+                            key={service.id} className={`${service.bgColor} h-80 flex gap-3 text-white items-center flex-col justify-center p-2 text-center rounded-lg`}>
                             {service.serviceSvg}
                             <h2 className="md:text-xl text-lg font-semibold">{service.title}</h2>
                             <p className="md:text-sm text-xs">{service.description}</p>

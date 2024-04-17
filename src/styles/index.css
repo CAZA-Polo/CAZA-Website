@@ -16,7 +16,7 @@
   --font-family: "Poppins", sans-serif;
   --font-weight: 400;
   --font-style:normal;
-  --caza-blue: rgb(0,54,100);
+  --caza-blue: rgb(10, 17, 34);
 }
 
 .caza__blue {
@@ -173,7 +173,10 @@
 }
 
 .global__bg { 
-  background: -webkit-linear-gradient(45deg, rgba(34, 155, 242, 1) 0%, rgba(0, 128, 129, 1) 99%, rgba(0, 128, 128, 1) 100%);
+  background:linear-gradient(0deg, rgba(75, 57, 57, 0), rgba(161, 5, 5, 0)), url('public/images/bg-patt.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 
 .contact__banner__bg {
@@ -197,12 +200,12 @@
   background-size: cover;
 }
 
-.joinus1__bg {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/Back.jpg');
-  background-position: center;
+.aboutus__bg {
+  background:linear-gradient(0deg, rgb(10, 17, 34), rgba(0, 0, 0, 0)), url('../../images/Back.jpg');
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-}
+}   
 
 .front__bg {
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/Front.jpg');

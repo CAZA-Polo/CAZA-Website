@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import ScrollToTop from '../components/ScrollToTop';
 import { MdArrowDropUp } from "react-icons/md";
 import { useEffect,useState,useContext } from 'react';
 import CookiePop from '../components/CookiePop';
@@ -34,19 +33,16 @@ const GlobalLayout = () => {
     },[]);
 
     return (
-        <ScrollToTop>
-            <main className="bg-gray-100 h-full">
+            <main>
+            <div className="global__bg w-auto object-cover">
                 <Navbar />
                 <Outlet />
-<<<<<<< HEAD
-                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100  text-4xl animate-bounce bg-sky-500"><MdArrowDropUp /></button> }
+                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-200  text-4xl animate-bounce bg-blue-500"><MdArrowDropUp /></button> }
                 <CookiePop /> 
-=======
-                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce caza__blue"><MdArrowDropUp /></button> }
+                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-200 text-4xl animate-bounce bg-blue-500"><MdArrowDropUp /></button> }
                 <CookiePop />
->>>>>>> 0eaa1bf6d8ec4c002f9a76b097b5dfeba579535a
+                </div>
             </main>
-        </ScrollToTop>
     )
 }
 
