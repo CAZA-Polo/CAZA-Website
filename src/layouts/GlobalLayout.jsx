@@ -38,7 +38,7 @@ const GlobalLayout = () => {
             <main className="bg-gray-100 h-full">
                 <Navbar />
                 <Outlet />
-                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce z-50 caza__blue"><MdArrowDropUp /></button> }
+                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 text-4xl animate-bounce z-50 bg-blue-800"><MdArrowDropUp /></button> }
                 <CookiePop />
             </main>
         </ScrollToTop>

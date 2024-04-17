@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Banner = () => {
     return (
-        <section className="items-center justify-center gap-4 flex flex-col w-full p-24 thought-bg">
+        <section className="items-center justify-center gap-4 flex flex-col w-full p-24 new_about">
             <div className="container mx-auto">
                 <div className="flex flex-col items-center gap-3 text-gray-100">
                     <motion.h1 

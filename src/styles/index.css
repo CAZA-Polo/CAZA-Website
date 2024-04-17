@@ -211,3 +211,10 @@
   color: red;
   font-size: x-large;
 }
+
+.new_about {
+  background:linear-gradient(0deg, rgba(33, 150, 243, 0.53), rgba(33, 150, 243, 0.53)), url('../../images/new-caza1.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

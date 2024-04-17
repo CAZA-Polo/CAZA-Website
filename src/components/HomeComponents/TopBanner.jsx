@@ -24,7 +24,7 @@ const TopBanner = () => {
             photo: '/images/banking-banner.jpg'
         },
         {
-            photo: '/images/DSC0114.jpg'
+            photo: '/images/new-caza.jpg'
         },
         {
             photo: '/images/ten-reasons-internet-banking_opt.jpg'
@@ -61,13 +61,23 @@ const TopBanner = () => {
                 </motion.div >                                    
 
             </div>
-            <div className="md:w-1/2">
-                <Carousel showThumbs={false} autoPlay={true} interval={2000} showArrows={false} swipeable={true} showIndicators={true} infiniteLoop showStatus={false}>
-                    { images?.map((image,id) => (
-                        <img key={id} className="md:h-[700px] h-[300px] md:object-fit object-cover" src={image.photo} alt="banners" />
-                    )) }
-                </Carousel>
+
+        {/* for desktop view */}
+            <div className="md:block hidden md:w-1/2 rounded relative h-screen">
+
+                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover" src={images[0].photo}/>
+                            
+                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover top-32 left-48" src={images[1].photo}/>
+
+                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover bottom-12 right-6" src={images[2].photo}/>
+
             </div>
+
+            <Carousel showThumbs={false} className="md:hidden block"> 
+                {images.map(image => (
+                    <img className="md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover" src={image.photo}/>
+                ))}
+            </Carousel>
         </div>
     )
 }

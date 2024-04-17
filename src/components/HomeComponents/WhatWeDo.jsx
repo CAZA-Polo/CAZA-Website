@@ -29,10 +29,10 @@ const WhatWeDo = () => {
     return (
         <section className="items-center justify-center gap-4 flex flex-col w-full md:p-18 p-10 what-we-do-bg">
             <div className="flex flex-col items-center gap-3 text-white">
-                <h1 className="md:text-4xl text-xl font-semibold">What We Do</h1>
+                <h1 className="md:text-4xl text-3xl font-semibold">What We Do</h1>
                 <p className="md:text-sm text-xs">We help the banks to customize their products and upgrade their systems.</p>
 
-                <div className="flex md:flex-row flex-col md:items-stretch items-start justify-around gap-10 mt-10">
+                <div className="flex md:flex-row flex-col md:items-stretch items-center justify-around gap-10 mt-10">
                     { events?.map(event => (
                         <div key={event.id} className="md:w-1/2 flex flex-col items-center gap-2">
                             <span className="text-5xl">{event.icon}</span>
