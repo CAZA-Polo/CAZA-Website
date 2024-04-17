@@ -63,14 +63,12 @@ const TopBanner = () => {
             </div>
 
         {/* for desktop view */}
-            <div className="md:block hidden md:w-1/2 rounded relative h-screen bg-red-500">
-
-                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover" src={images[0].photo}/>
-                            
-                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover top-44 left-48" src={images[1].photo}/>
-
-                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover bottom-0 right-0" src={images[2].photo}/>
-
+            <div className="hidden md:w-1/2 rounded h-auto md:flex items-center justify-center p-5">
+                <div className="relative flex flex-col w-[90%] items-center justify-center h-[690px]">
+                    <img className="md:rounded-lg md:h-[300px] w-[250px] h-[300px] object-cover absolute z-50" src={images[1].photo}/>
+                    <img className="md:rounded-lg md:h-[300px] w-[250px] h-[300px] object-cover absolute top-0 left-0" src={images[0].photo}/>
+                    <img className="md:rounded-lg md:h-[300px] w-[250px] h-[300px] object-cover absolute bottom-0 right-0" src={images[2].photo}/>
+                </div>
             </div>
 
             <Carousel showThumbs={false} className="md:hidden block"> 
