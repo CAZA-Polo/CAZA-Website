@@ -117,7 +117,7 @@ const Navbar = () => {
                 {/* For Desktop */}
                 <div className={`w-full ${!isVisible ? 'mt-0' : ''} z-50 flex justify-between items-center px-10`}>
                     <img onClick={() => navigate('/') } className="w-[128px] cursor-pointer h-[65px] mx-5 object-fit" src="./images/CAZA_Transparent.png" alt="CAZA Logo" />
-                    <ul className="flex justify-center items-center gap-8 font-normal text-gray-700 text-sm">
+                    <ul className="flex justify-center items-center gap-8 font-normal text-gray-700 text-base">
                         { paths?.map((path,id) => (
                             <li onClick={ (path.link !== '/about' && pathName !== 'About') ? scrollToTop : undefined } key={id}>
                                 { path.name !== 'About' ? 
