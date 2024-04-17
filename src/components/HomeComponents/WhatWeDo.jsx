@@ -31,7 +31,7 @@ const WhatWeDo = () => {
             <div className="flex flex-col items-center gap-3 text-white">
                 <h1 className="md:text-4xl text-xl font-semibold">What We Do</h1>
                 <p className="md:text-sm text-xs">We help the banks to customize their products and upgrade their systems.</p>
-                <div className="flex md:flex-row flex-col md:items-stretch items-start justify-around gap-10 mt-10">
+                <div className="flex md:flex-row flex-col md:items-stretch items-center justify-around gap-10 mt-10">
                     { events?.map(event => (
                         <div key={event.id} className="md:w-1/2 flex flex-col p-10 items-center gap-2 rounded-xl bg-gray-400/25">
                             <span className="text-5xl">{event.icon}</span>
