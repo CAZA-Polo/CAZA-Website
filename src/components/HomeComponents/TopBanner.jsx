@@ -63,13 +63,13 @@ const TopBanner = () => {
             </div>
 
         {/* for desktop view */}
-            <div className="md:block hidden md:w-1/2 rounded relative h-screen">
+            <div className="md:block hidden md:w-1/2 rounded relative h-screen bg-red-500">
 
                 <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover" src={images[0].photo}/>
                             
-                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover top-32 left-48" src={images[1].photo}/>
+                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover top-44 left-48" src={images[1].photo}/>
 
-                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover bottom-12 right-6" src={images[2].photo}/>
+                <img className="absolute md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover bottom-0 right-0" src={images[2].photo}/>
 
             </div>
 
