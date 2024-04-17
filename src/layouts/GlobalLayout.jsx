@@ -34,19 +34,12 @@ const GlobalLayout = () => {
 
     return (
             <main>
-            <div className="global__bg w-auto object-cover">
-                <Navbar />
-                <Outlet />
-<<<<<<< HEAD
-                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-200  text-4xl animate-bounce bg-blue-500"><MdArrowDropUp /></button> }
-                <CookiePop /> 
-                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-200 text-4xl animate-bounce bg-blue-500"><MdArrowDropUp /></button> }
-                <CookiePop />
+                <div className="global__bg w-auto object-cover">
+                    <Navbar />
+                    <Outlet />
+                    { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 z-50 cursor-pointer  text-4xl animate-bounce bg-sky-500"><MdArrowDropUp /></button> }
+                    <CookiePop /> 
                 </div>
-=======
-                { isVisible && <button onClick={scrollUp} className="fixed right-5 bottom-5 text-gray-100 z-50 cursor-pointer  text-4xl animate-bounce bg-sky-500"><MdArrowDropUp /></button> }
-                <CookiePop /> 
->>>>>>> 4304b357ccd7f485f1125523059897197a189680
             </main>
     )
 }
