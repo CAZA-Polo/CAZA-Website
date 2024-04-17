@@ -58,10 +58,7 @@ const TopBanner = () => {
                 className="flex justify-center">
                     <Link to='/about' className="rounded-md md:w-1/4 w-1/3 bg-blue-500 md:p-2 p-1 text-center text-gray-100 hover:bg-transparent hover:border-blue-500 hover:border hover:text-blue-500 transition md:text-sm text-xs">Get Started</Link>
                     <Link to='/about' className="md:w-1/4 w-1/2 md:p-2 p-1 text-center text-gray-100 hover:text-blue-500 transition md:text-sm text-xs">Learn More →</Link>
-                </motion.div >    
-
-            <div className="">
-                </div>                                
+                </motion.div >                     
 
             </div>
             {/* <div className="md:w-1/2">
