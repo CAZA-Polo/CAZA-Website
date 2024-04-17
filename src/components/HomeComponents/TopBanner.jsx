@@ -62,7 +62,7 @@ const TopBanner = () => {
 
             </div>
 
-        {/* for desktop view */}
+            {/* for desktop view */}
             <div className="hidden md:w-1/2 rounded h-auto md:flex items-center justify-center p-5">
                 <div className="relative flex flex-col w-[90%] items-center justify-center h-[690px]">
                     <img className="md:rounded-lg md:h-[300px] w-[250px] h-[300px] object-cover absolute z-50" src={images[1].photo}/>
@@ -71,6 +71,7 @@ const TopBanner = () => {
                 </div>
             </div>
 
+            {/* for mobile view */}
             <Carousel showThumbs={false} className="md:hidden block"> 
                 {images.map(image => (
                     <img className="md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover" src={image.photo}/>
