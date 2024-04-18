@@ -367,7 +367,7 @@ const PrivacyPolicy = () => {
                 <li>Written inquiries / requests / complaints may be sent to:</li>
             </ul>
 
-            <ul className="md:text-lg text-sm text-sky-950 font-bold md:mt-8 mt-6 space-y-0 list-none list-outside ml-10">
+            <ul className="md:text-lg text-sm text-sky-950 font-bold md:mt-8 mt-6 space-y-0 list-none list-outside md:ml-10">
                 <li>Data Protection Officer</li>
                 <li>CAZA Technology Solutions Inc.</li>
                 <li>Unit 707 Antel Corporate Center</li>
@@ -375,15 +375,19 @@ const PrivacyPolicy = () => {
                 <li>Makati City</li>
             </ul>
 
-            <ul className="md:text-lg text-sm text-sky-950 font-bold mt-5 space-y-5 list-none list-outside ml-10">
+            <ul className="md:text-lg text-sm text-sky-950 font-bold mt-5 space-y-5 list-none list-outside md:ml-10">
                 <li>Or by sending an email to <u className="text-sky-600"><b className="text-sky-600 ">dataprivacy@cazatechnology.com</b></u></li>  
             </ul>
+            
+            <div className="flex justify-center items-center">
+                <img className="justify-center md:w-1/2 w-auto" alt="npc-seal" src="public\images\npc-seal.png" />
+            </div>
 
             <h2 className="md:mt-14 mt-8 md:text-3xl text-xl text-sky-950 font-semibold upper-roman">Effectivity</h2>
             <hr className="md:w-16 w-10 h-1 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-sky-500"></hr>
 
             <ul className="md:text-lg text-sm text-sky-950 font-bold md:mt-8 mt-6 space-y-5 list-inside">
-                <li className="indent-10"> The provisions of this Privacy Manual are effective this 18th day of January 2024 until revoked or
+                <li className="indent-10">The provisions of this Privacy Manual are effective this 18th day of January 2024 until revoked or
                 amended by this company.</li>
             </ul>
 

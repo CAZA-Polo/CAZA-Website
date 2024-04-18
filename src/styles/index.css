@@ -166,7 +166,7 @@
 }
 
 .services__bg {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/services/services-banner.jpg');
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/services-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,14 +177,14 @@
 }
 
 .contact__banner__bg {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/contact/Language-Services-banner-2500x500-01.png');
-  background-position: center;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/contact.jpg');
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .career__bg {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/career/career-banner.jpg');
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/opports.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,4 +217,10 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.npc_seal {
+  background:linear-gradient(0deg, rgba(33, 150, 243, 0.53), rgba(33, 150, 243, 0.53)), url('../../images/new_caza.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

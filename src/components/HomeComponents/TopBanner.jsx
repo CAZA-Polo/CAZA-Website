@@ -21,13 +21,13 @@ const TopBanner = () => {
 
     const [images,setImages] = useState([
         {
-            photo: '/images/banking-banner.jpg'
+            photo: '/images/hm-2.jpg'
         },
         {
             photo: '/images/new-caza.jpg'
         },
         {
-            photo: '/images/ten-reasons-internet-banking_opt.jpg'
+            photo: '/images/hm-1.jpg'
         }
     ])
 
