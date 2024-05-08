@@ -49,7 +49,7 @@ const Offers = () => {
                     <h1 className="md:text-5xl text-2xl font-semibold text-gray-700">What we offer</h1>
                     <p className="md:text-sm text-xs md:mt-5 mt-2">Onsite and offsite implementation development and support services ensuring quality and cost effective solutions.
                     We also offer staff augmentation.
-                    </motion.p>
+                    </p>
                 </div>
             </div>
 
