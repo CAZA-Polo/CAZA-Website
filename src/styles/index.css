@@ -7,11 +7,15 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
   scroll-behavior: smooth;
 }
 
 :root {
   --font-family: "Poppins", sans-serif;
+  --font-weight: 400;
+  --font-style:normal;
   --caza-blue: rgb(0,54,100);
 }
 
@@ -162,7 +166,7 @@
 }
 
 .services__bg {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/services/services-banner.jpg');
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/services-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,14 +177,14 @@
 }
 
 .contact__banner__bg {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/contact/Language-Services-banner-2500x500-01.png');
-  background-position: center;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/contact.jpg');
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .career__bg {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/career/career-banner.jpg');
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.56)), url('../../images/opports.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,4 +202,25 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+/* *jeric css */
+
+.title {
+  color: red;
+  font-size: x-large;
+}
+
+.new_about {
+  background:linear-gradient(0deg, rgba(33, 150, 243, 0.53), rgba(33, 150, 243, 0.53)), url('../../images/new-caza1.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.npc_seal {
+  background:linear-gradient(0deg, rgba(33, 150, 243, 0.53), rgba(33, 150, 243, 0.53)), url('../../images/new_caza.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

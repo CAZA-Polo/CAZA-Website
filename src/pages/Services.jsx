@@ -18,7 +18,7 @@ const Services = () => {
             <Solutions />
             <GlobalBusiness />
             <Creative />
-            <Message />
+            {/* <Message /> */}
             <Footer />
         </main>
         </>

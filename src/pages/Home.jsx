@@ -16,15 +16,15 @@ const Home = () => {
             <title>CAZA Technology Solutions Inc. | Home</title>
         </Helmet>
         <main>
-            <Banner />
+            {/* <Banner /> */}
             <TopBanner />
             <Services />
             <Offers />
             <WhatWeDo />
-            <Stories />
-            <Comments />
+            {/* <Stories /> */}
+            {/* <Comments /> */}
             <GreatService />
-            <Message />
+            {/* <Message /> */}
             <Footer />
         </main>
         </>

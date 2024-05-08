@@ -17,7 +17,7 @@ const About = () => {
             <History />
             <Leaders />
             <Vision />
-            <Message />
+            {/* <Message /> */}
             <Footer />
         </main>
         </>

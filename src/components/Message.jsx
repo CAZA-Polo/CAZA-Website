@@ -2,7 +2,7 @@ import { FaSquareFacebook,FaSquareTwitter,FaSquareGooglePlus } from "react-icons
 
 const Message = () => {
     return (
-        <section className="md:p-24 p-7 contact__bg">
+        <section className="md:p-32 p-7 contact__bg">
            <div className="container mx-auto grid md:grid-cols-5 gap-10 md:gap-0 bg-gray-100 rounded-md p-5">
                 <form className="border border-gray-300 md:col-span-2 col-span-3 p-5 md:w-3/4 w-full flex flex-col gap-5 overflow-hidden shadow-lg rounded-md order-last md:order-first">
                     <div>

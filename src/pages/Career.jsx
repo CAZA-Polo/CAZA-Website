@@ -14,7 +14,7 @@ const Career = () => {
             <Banner />
             <JoinUs />
             <BusinessProcess />
-            <Message />
+            {/* <Message /> */}
             <Footer />
         </main>
         </>

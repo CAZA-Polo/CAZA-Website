@@ -12,7 +12,7 @@ const Team = () => {
         <main>
             <Banner />
             <Growth />
-            <Message />
+            {/* <Message /> */}
             <Footer />
         </main>
         </>
