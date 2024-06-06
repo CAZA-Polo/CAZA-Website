@@ -73,8 +73,8 @@ const TopBanner = () => {
 
             {/* for mobile view */}
             <Carousel showThumbs={false} className="md:hidden block"> 
-                {images.map(image => (
-                    <img className="md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover" src={image.photo}/>
+                {images.map((image,key) => (
+                    <img key={key} className="md:rounded-lg md:h-[300px] md:w-[250px] h-[300px] object-cover" src={image.photo}/>
                 ))}
             </Carousel>
         </div>

@@ -38,7 +38,7 @@ const CookiePop = () => {
     const checkIfAgreeCookies = () => cookieUserResponse === null && controls
 
     return (
-        <div className="fixed bottom-10 w-full">
+        <div className="fixed bottom-10 w-full z-50">
             <div className="container mx-auto justify-center flex items-center">
                 <AnimatePresence>
                     { showCookiePop && 
