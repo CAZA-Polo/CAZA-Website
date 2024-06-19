@@ -12,13 +12,14 @@ import NotFound1 from "./pages/NotFound1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import GlobalProvider from "./helpers/GlobalProvider";
+import Maintenance from "./pages/Maintenance";
 
 function App() {
   
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
-          <Route element={<GlobalLayout />}>
+          {/* <Route element={<GlobalLayout />}>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/services' element={<Services />} />
@@ -29,7 +30,8 @@ function App() {
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/cookie-policy' element={<CookiePolicy />} />
           </Route>
-          <Route path='*' element={<NotFound1 />} />
+          <Route path='*' element={<NotFound1 />} /> */}
+          <Route path='/' element={<Maintenance />} />
       </Route>
     )
   )
