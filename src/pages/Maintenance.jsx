@@ -5,7 +5,7 @@ const Maintenance = () => {
                 <h1 className="text-6xl font-semibold text-gray-100">We'll be back soon!</h1>
                 <p className="text-gray-100 text-sm">Sorry for the inconvenience but we're performing some maintenance at the moment.
                 If you need to, you can always reach us out to <strong className="text-orange-600">hr@cazatechnology.com</strong>, otherwise we'll
-                be back online shortly!
+                be back online shortly!!
                 </p>
                 <span className="text-gray-100">- CAZA Technology Solutions Inc.</span>
             </div>
