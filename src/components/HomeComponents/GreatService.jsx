@@ -55,7 +55,7 @@ const GreatService = () => {
                 </div>
             </div>
                 <div className="flex justify-center items-center mx-16">
-                    <img className="justify-center md:w-screen mx-auto rounded-lg mt-5" alt="npc-seal" src="/images/hm-services.webp" />
+                    <img className="justify-center md:w-full mx-auto rounded-lg mt-5 w-3/4" alt="npc-seal" src="/images/hm-services.webp" />
                 </div>
         </section>
     )

@@ -380,7 +380,7 @@ const PrivacyPolicy = () => {
             </ul>
             
             <div className="flex justify-center items-center">
-                <img className="justify-center md:w-1/2 w-auto" alt="npc-seal" src="public\images\npc-seal.png" />
+                <img className="justify-center md:w-1/2 w-auto" alt="npc-seal" src="./images/npc-seal.png" />
             </div>
 
             <h2 className="md:mt-14 mt-8 md:text-3xl text-xl text-sky-950 font-semibold upper-roman">Effectivity</h2>
