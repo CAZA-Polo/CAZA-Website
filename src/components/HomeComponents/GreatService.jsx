@@ -54,8 +54,8 @@ const GreatService = () => {
                     </AnimatePresence>
                 </div>
             </div>
-                <div className="flex justify-center items-center mx-16">
-                    <img className="justify-center md:w-full mx-auto rounded-lg mt-5 w-3/4" alt="npc-seal" src="/images/hm-services.webp" />
+                <div className="flex justify-center items-center md:mx-16 mx-7">
+                    <img className="justify-center md:w-full mx-auto rounded-lg mt-5 w-full" alt="npc-seal" src="/images/hm-services.webp" />
                 </div>
         </section>
     )
